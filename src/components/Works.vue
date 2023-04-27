@@ -1,0 +1,90 @@
+<template>
+    <section id="works" class="py-2" >
+        <div class="section container border-b-2 dark:border-gray-900 xl:max-w-[1124px] w-11/12 px-0 py-16 space-y-8">
+            <header class="flex flex-col text-center">
+                <h6 class="uppercase text-red-500 font-bold">award winning works</h6>
+                <h1 class="text-[30px] md:text-[40px] lg:text-[50px] font-bold">Recent Works</h1>
+            </header>
+            <div class="grid grid-cols-1 items-center sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div
+                v-motion-slide-visible-once-bottom
+                class="work relative rounded-xl overflow-hidden shadow-md">
+                    <img src="../assets/works/work1.png" class="w-full transition duration-300" alt="">
+                    <div class="absolute top-0 left-0 w-full h-full flex flex-col gap-2 p-8 sm:p-6 md:p-4 lg:p-6 xl:p-10 items-start justify-end bg-black/80 overflow-hidden translate-y-full transition duration-300">
+                        <p class="text-2xl text-slate-50 md:text-lg lg:text-2xl">Example Work</p>
+                        <p class="text-sm text-slate-50 md:text-xs lg:text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe minima quos ad molestiae et obcaecati, provident recusandae repellendus odit voluptate.</p>
+                        <div class="flex flex-row gap-4 text-xl md:text-sm lg:text-lg">
+                            <a href="" class="text-slate-50"><i class="fa-brands fa-github"></i></a>
+                            <a href="" class="text-slate-50"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                v-motion-slide-visible-once-bottom
+                class="work relative rounded-xl overflow-hidden shadow-md">
+                    <img src="../assets/works/work2.png" class="w-full transition duration-300" alt="">
+                    <div class="absolute top-0 left-0 w-full h-full flex flex-col gap-2 p-8 sm:p-6 md:p-4 lg:p-6 xl:p-10 items-start justify-end bg-black/80 overflow-hidden translate-y-full transition duration-300">
+                        <p class="text-2xl text-slate-50 md:text-lg lg:text-2xl">Example Work</p>
+                        <p class="text-sm text-slate-50 md:text-xs lg:text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe minima quos ad molestiae et obcaecati, provident recusandae repellendus odit voluptate.</p>
+                        <div class="flex flex-row gap-4 text-xl md:text-sm lg:text-lg">
+                            <a href="" class="text-slate-50"><i class="fa-brands fa-github"></i></a>
+                            <a href="" class="text-slate-50"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                v-motion-slide-visible-once-bottom
+                class="work relative rounded-xl overflow-hidden shadow-md">
+                    <img src="../assets/works/work3.png" class="w-full transition duration-300" alt="">
+                    <div class="absolute top-0 left-0 w-full h-full flex flex-col gap-2 p-8 sm:p-6 md:p-4 lg:p-6 xl:p-10 items-start justify-end bg-black/80 overflow-hidden translate-y-full transition duration-300">
+                        <p class="text-2xl text-slate-50 md:text-lg lg:text-2xl">Example Work</p>
+                        <p class="text-sm text-slate-50 md:text-xs lg:text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe minima quos ad molestiae et obcaecati, provident recusandae repellendus odit voluptate.</p>
+                        <div class="flex flex-row gap-4 text-xl md:text-sm lg:text-lg">
+                            <a href="" class="text-slate-50"><i class="fa-brands fa-github"></i></a>
+                            <a href="" class="text-slate-50"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                v-motion-slide-visible-once-bottom
+                class="work relative rounded-xl overflow-hidden shadow-md">
+                    <img src="../assets/works/work4.png" class="w-full transition duration-300" alt="">
+                    <div class="absolute top-0 left-0 w-full h-full flex flex-col gap-2 p-8 sm:p-6 md:p-4 lg:p-6 xl:p-10 items-start justify-end bg-black/80 overflow-hidden translate-y-full transition duration-300">
+                        <p class="text-2xl text-slate-50 md:text-lg lg:text-2xl">Example Work</p>
+                        <p class="text-sm text-slate-50 md:text-xs lg:text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe minima quos ad molestiae et obcaecati, provident recusandae repellendus odit voluptate.</p>
+                        <div class="flex flex-row gap-4 text-xl md:text-sm lg:text-lg">
+                            <a href="" class="text-slate-50"><i class="fa-brands fa-github"></i></a>
+                            <a href="" class="text-slate-50"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                v-motion-slide-visible-once-bottom
+                class="work relative rounded-xl overflow-hidden shadow-md">
+                    <img src="../assets/works/work5.png" class="w-full transition duration-300" alt="">
+                    <div class="absolute top-0 left-0 w-full h-full flex flex-col gap-2 p-8 sm:p-6 md:p-4 lg:p-6 xl:p-10 items-start justify-end bg-black/80 overflow-hidden translate-y-full transition duration-300">
+                        <p class="text-2xl text-slate-50 md:text-lg lg:text-2xl">Example Work</p>
+                        <p class="text-sm text-slate-50 md:text-xs lg:text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe minima quos ad molestiae et obcaecati, provident recusandae repellendus odit voluptate.</p>
+                        <div class="flex flex-row gap-4 text-xl md:text-sm lg:text-lg">
+                            <a href="" class="text-slate-50"><i class="fa-brands fa-github"></i></a>
+                            <a href="" class="text-slate-50"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                v-motion-slide-visible-once-bottom
+                class="work relative rounded-xl overflow-hidden shadow-md">
+                    <img src="../assets/works/work6.png" class="w-full transition duration-300" alt="">
+                    <div class="absolute top-0 left-0 w-full h-full flex flex-col gap-2 p-8 sm:p-6 md:p-4 lg:p-6 xl:p-10 items-start justify-end bg-black/80 overflow-hidden translate-y-full transition duration-300">
+                        <p class="text-2xl text-slate-50 md:text-lg lg:text-2xl">Example Work</p>
+                        <p class="text-sm text-slate-50 md:text-xs lg:text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe minima quos ad molestiae et obcaecati, provident recusandae repellendus odit voluptate.</p>
+                        <div class="flex flex-row gap-4 text-xl md:text-sm lg:text-lg">
+                            <a href="" class="text-slate-50"><i class="fa-brands fa-github"></i></a>
+                            <a href="" class="text-slate-50"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>

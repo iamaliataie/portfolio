@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    @apply
+        bg-slate-100 dark:bg-gray-950
+        text-gray-950 dark:text-slate-50
+}
+
+.nav-dot.selected{
+    @apply
+        bg-blue-700
+}
+.nav-dot:hover span{
+    @apply
+        opacity-100
+}
+
+.nav-link.selected{
+    @apply
+        border-b-2
+        border-dotted
+}
+
+.nav-item.selected{
+    @apply
+    bg-slate-300
+    dark:bg-gray-800
+}
+
+.work:hover > div {
+    transform: translateY(0);
+}
+.work:hover > img {
+    transform: scale(1.2)
+}
+
+.swiper-pagination{
+    @apply
+        !relative
+        mt-6
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    @apply
+        bg-slate-950
+        dark:bg-slate-50
+}
