@@ -5,6 +5,7 @@ import { supabase } from './supabase';
 import Navbar from './components/Navbar.vue';
 import Header from './components/Header.vue';
 import About from './components/About.vue';
+import Jobs from './components/Jobs.vue'
 import Works from './components/Works.vue';
 import Skills from './components/Skills.vue';
 import Contact from './components/Contact.vue';
@@ -33,6 +34,7 @@ onMounted(() => {
     <Navbar />
     <Header />
     <About :about="aboutData"/>
+    <Jobs />
     <Works :works="worksList"/>
     <Skills />
     <Contact />

@@ -21,7 +21,7 @@ const modules = [Pagination, Autoplay]
     <div class=" text-gray-900 dark:text-zinc-50 py-2">
         <div class="container border-b-2 dark:border-gray-900 xl:max-w-[1124px] w-11/12 px-0 py-16 space-y-8">
             <header class="flex flex-col text-center">
-                <h6 class="uppercase text-red-500 font-bold">Testimonials</h6>
+                <h6 class="uppercase text-main-red font-bold">Testimonials</h6>
                 <h1 class="text-[30px] md:text-[40px] lg:text-[50px] font-bold">What My Colleagues Say</h1>
             </header>
             <swiper 
@@ -59,7 +59,7 @@ const modules = [Pagination, Autoplay]
                         <div class="">
                             <p class="text-gray-950 font-bold text-lg md:text-sm lg:text-lg dark:text-slate-100">Ali Ahmad Ataie</p>
                             <span>Web Developer</span>
-                            <a href="https://github.com/iamaliataie" class="text-red-500"><i class="fa fa-external-link text-xs ml-2"></i></a>
+                            <a href="https://github.com/iamaliataie" class="text-main-red"><i class="fa fa-external-link text-xs ml-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ const modules = [Pagination, Autoplay]
                         <div class="">
                             <p class="text-gray-950 font-bold text-lg md:text-sm lg:text-lg dark:text-slate-100">Ali Ahmad Ataie</p>
                             <span>Web Developer</span>
-                            <a href="https://github.com/iamaliataie" class="text-red-500"><i class="fa fa-external-link text-xs ml-2"></i></a>
+                            <a href="https://github.com/iamaliataie" class="text-main-red"><i class="fa fa-external-link text-xs ml-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@ const modules = [Pagination, Autoplay]
                         <div class="">
                             <p class="text-gray-950 font-bold text-lg md:text-sm lg:text-lg dark:text-slate-100">Ali Ahmad Ataie</p>
                             <span>Web Developer</span>
-                            <a href="https://github.com/iamaliataie" class="text-red-500"><i class="fa fa-external-link text-xs ml-2"></i></a>
+                            <a href="https://github.com/iamaliataie" class="text-main-red"><i class="fa fa-external-link text-xs ml-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,7 @@ const modules = [Pagination, Autoplay]
                         <div class="">
                             <p class="text-gray-950 font-bold text-lg md:text-sm lg:text-lg dark:text-slate-100">Ali Ahmad Ataie</p>
                             <span>Web Developer</span>
-                            <a href="https://github.com/iamaliataie" class="text-red-500"><i class="fa fa-external-link text-xs ml-2"></i></a>
+                            <a href="https://github.com/iamaliataie" class="text-main-red"><i class="fa fa-external-link text-xs ml-2"></i></a>
                         </div>
                     </div>
                 </div>

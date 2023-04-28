@@ -5,7 +5,8 @@ function updateList(){
     document.querySelectorAll('.selected').forEach(c => c.classList.remove('selected'));
     
     document.querySelectorAll('.nav-link')[[...document.querySelectorAll('.section')].indexOf(titles[0])].classList.add('selected');
-    document.querySelectorAll('.nav-item')[[...document.querySelectorAll('.section')].indexOf(titles[0])].classList.add('selected');
+    document.querySelectorAll('.mobile-nav-link')[[...document.querySelectorAll('.section')].indexOf(titles[0])].classList.add('selected');
+    // document.querySelectorAll('.nav-dot')[[...document.querySelectorAll('.section')].indexOf(titles[0])].classList.add('selected');
 }
 
 updateList();
@@ -31,7 +32,7 @@ timesButton.addEventListener('click', () => {
 
 })
 
-const navLinks = document.querySelectorAll('.nav-item')
+const navLinks = document.querySelectorAll('.mobile-nav-link')
 navLinks.forEach(navLink => {
     navLink.addEventListener('click', () => {
         menu.classList.add('translate-x-full')

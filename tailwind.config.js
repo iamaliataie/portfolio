@@ -18,7 +18,8 @@ export default {
     extend: {
       fontFamily: ['Poppins', 'sans-serif'],
       colors: {
-        'main': '#292D32',
+        'main-light': '#F8FAFC',
+        'main-red': '#ED1740',
       }
     },
   },

@@ -2,25 +2,25 @@
     <section id="contact" class="py-2">
         <div class="section container border-b-2 dark:border-gray-900 xl:max-w-[1124px] w-11/12 px-0 py-16 space-y-8">
             <header class="flex flex-col text-center">
-                <h6 class="uppercase text-red-500 font-bold">Contact</h6>
+                <h6 class="uppercase text-main-red font-bold">Contact</h6>
                 <h1 class="text-[30px] md:text-[40px] lg:text-[50px] font-bold">Contact With Me</h1>
             </header>
             <div class="flex flex-col md:flex-row items-left justify-left gap-8">
                 <div class="md:w-4/12 flex flex-col sm:grid sm:grid-cols-2 md:flex gap-4">
                     <div class="flex justify-center sm:flex-col items-center gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-7 rounded-lg">
-                        <i class="fa fa-map text-red-500 text-3xl"></i>
+                        <i class="fa fa-map text-main-red text-3xl"></i>
                         <span class="sm:text-sm">Kabul, Afghanistan</span>
                     </div>
                     <div class="flex justify-center sm:flex-col items-center gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-7 rounded-lg">
-                        <i class="fa fa-phone text-red-500 text-3xl"></i>
+                        <i class="fa fa-phone text-main-red text-3xl"></i>
                         <a href="tel:+93767014769" class="sm:text-sm">+93 - 767 - 014 - 769</a>
                     </div>
                     <div class="flex justify-center sm:flex-col items-center gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-7 rounded-lg">
-                        <i class="fa fa-envelope text-red-500 text-3xl"></i>
+                        <i class="fa fa-envelope text-main-red text-3xl"></i>
                         <a href="mailto:iamaliataie@gmail.com" class="sm:text-sm">iamaliataie@gmail.com</a>
                     </div>
                     <div class="flex justify-center sm:flex-col items-center gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-7 rounded-lg">
-                        <i class="fa fa-check-circle text-red-500 text-3xl"></i>
+                        <i class="fa fa-check-circle text-main-red text-3xl"></i>
                         <span class="sm:text-sm">Freelance Available</span>
                     </div>
                 </div>

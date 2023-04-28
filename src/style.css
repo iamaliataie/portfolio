@@ -10,7 +10,7 @@ html{
 body {
     @apply
         bg-slate-100 dark:bg-gray-950
-        text-gray-950 dark:text-slate-50
+        text-gray-950 dark:text-main-light
 }
 
 .nav-dot.selected{
@@ -28,10 +28,15 @@ body {
         border-dotted
 }
 
-.nav-item.selected{
+.mobile-nav-link.selected{
     @apply
     bg-slate-300
     dark:bg-gray-800
+}
+
+.nav-dot.selected {
+    @apply
+        bg-red-500
 }
 
 .work:hover > div {
