@@ -14,6 +14,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/vue-fontawesome": "^3.0.3",
+    "@supabase/supabase-js": "^2.21.0",
     "@vueuse/core": "^10.0.2",
     "@vueuse/motion": "^2.0.0-beta.12",
     "swiper": "^9.2.4",

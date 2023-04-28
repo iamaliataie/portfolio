@@ -1,3 +1,22 @@
+<script setup>
+
+import { onMounted, ref } from 'vue';
+import { supabase } from '../supabase';
+
+const aboutText = ref('')
+
+const about = async () => {
+    const { data } = await supabase.from('about').select().single()
+    aboutText.value = data.text;
+    console.log(aboutText);
+}
+
+onMounted(() => {
+    about();
+})
+
+</script>
+
 <template>
     <section id="about" class="py-2">
         <div class="section container border-b-2 dark:border-gray-900 xl:max-w-[1124px] w-11/12 px-0 py-16 space-y-8">
@@ -17,7 +36,7 @@
                             <h1 class="text-[43px] sm:text-4xl md:text-5xl lg:text-7xl">Ali Ahmad Ataie</h1>
                         </div>
                         <div class="xl:w-5/6">
-                            <p class="sm:text-sm lg:text-lg">I am a web developer with a vast array of knowledge in many different frontend and backend languages, responsive frameworks, databases, and best code practices. My objective is simply to be the best web developer that I can be and to contribute to the technology industry all that I know and can do.</p>
+                            <p class="sm:text-sm lg:text-lg">{{ aboutText }}</p>
                         </div>
                         <div class="flex flex-col space-y-4">
                             <p class="uppercase font-semibold sm:text-sm md:text-[16px]">follow me on</p>
