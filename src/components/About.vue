@@ -1,19 +1,6 @@
 <script setup>
 
-import { onMounted, ref } from 'vue';
-import { supabase } from '../supabase';
-
-const aboutText = ref('')
-
-const about = async () => {
-    const { data } = await supabase.from('about').select().single()
-    aboutText.value = data.text;
-    console.log(aboutText);
-}
-
-onMounted(() => {
-    about();
-})
+const props = defineProps(['about']);
 
 </script>
 
@@ -36,7 +23,7 @@ onMounted(() => {
                             <h1 class="text-[43px] sm:text-4xl md:text-5xl lg:text-7xl">Ali Ahmad Ataie</h1>
                         </div>
                         <div class="xl:w-5/6">
-                            <p class="sm:text-sm lg:text-lg">{{ aboutText }}</p>
+                            <p class="sm:text-sm lg:text-lg">{{ about }}</p>
                         </div>
                         <div class="flex flex-col space-y-4">
                             <p class="uppercase font-semibold sm:text-sm md:text-[16px]">follow me on</p>
