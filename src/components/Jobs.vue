@@ -1,5 +1,5 @@
 <template>
-    <section id="skills" class="py-2">
+    <section id="jobs" class="py-2">
         <div class="section container border-b-2 dark:border-gray-900 xl:max-w-[1124px] w-11/12 px-0 py-16 space-y-8">
             <header class="flex flex-col text-center">
                 <h6 class="uppercase text-main-red font-bold">my services</h6>
