@@ -5,7 +5,6 @@ import { supabase } from './supabase';
 import Navbar from './components/Navbar.vue';
 import Header from './components/Header.vue';
 import About from './components/About.vue';
-import Jobs from './components/Jobs.vue'
 import Works from './components/Works.vue';
 import Skills from './components/Skills.vue';
 import Contact from './components/Contact.vue';
@@ -13,7 +12,6 @@ import Footer from './components/Footer.vue';
 
 const aboutData = ref('')
 const worksList = ref([])
-const loading = ref(true)
 
 
 const fetchData = async () => {
@@ -35,7 +33,6 @@ onMounted(() => {
     <Navbar />
     <Header />
     <About :about="aboutData"/>
-    <Jobs />
     <Works :works="worksList"/>
     <Skills />
     <Contact />

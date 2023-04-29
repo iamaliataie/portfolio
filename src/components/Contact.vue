@@ -1,3 +1,54 @@
+<script setup>
+
+import { reactive, ref } from 'vue';
+import { supabase } from '../supabase';
+import emailjs from '@emailjs/browser'
+
+const emailjsServiceId = import.meta.env.VITE_EMAILJS_SERVICE_ID
+const emailjsTemplateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+const emailjsPublicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+
+const form = ref()
+const waiting = ref(false)
+const messageReport = ref('')
+const success = ref(false)
+
+const message = reactive({
+    name: '',
+    phone: '',
+    email: '',
+    subject: '',
+    message: ''
+})
+
+const sendMessage = async () => {
+    if (!message.name || !message.email || !message.subject || !message.message) {
+        messageReport.value = 'name, email, subject and message fields are required.'
+        success.value = false
+        return
+    }
+    waiting.value = true
+    const {data, error} = await supabase.from('messages').insert(message)
+    if (!error) {
+        messageReport.value = 'Your message has been sent successfully. Thank You!'
+        success.value = true
+        emailjs.sendForm(emailjsServiceId, emailjsTemplateId, form.value, emailjsPublicKey)
+            .then((result) => {
+                    
+                }, (error) => {
+                    
+                }
+            )
+    }
+    else {
+        messageReport.value = "Your message couldn't send. Please try again!"
+        success.value = false
+    }
+    waiting.value = false
+}
+
+</script>
+
 <template>
     <section id="contact" class="py-2">
         <div class="section container border-b-2 dark:border-gray-900 xl:max-w-[1124px] w-11/12 px-0 py-16 space-y-8">
@@ -25,22 +76,50 @@
                     </div>
                 </div>
                 <div class="md:w-8/12 rounded-lg bg-slate-50 dark:bg-gray-900 dark:shadow-black shadow-lg p-6 sm:p-12 md:p-6 lg:p-12">
-                    <form class="space-y-6 sm:space-y-8">
+                    <form ref="form" @submit.prevent="sendMessage" class="space-y-6 sm:space-y-8">
                         <div class="flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-4 lg:gap-8">
-                            <input type="text" class="py-3 px-5 rounded-md bg-slate-200 dark:bg-gray-950 w-full focus:outline-none" placeholder="Enter your name">
-                            <input type="text" class="py-3 px-5 rounded-md bg-slate-200 dark:bg-gray-950 w-full focus:outline-none" placeholder="Enter your phone">
+                            <input
+                            v-model="message.name"
+                            name="user_name"
+                            type="text" class="py-3 px-5 rounded-md bg-slate-200 dark:bg-gray-950 w-full focus:outline-none" placeholder="Enter your name" required>
+                            <input
+                            v-model="message.phone"
+                            name="user_phone"
+                            type="text" class="py-3 px-5 rounded-md bg-slate-200 dark:bg-gray-950 w-full focus:outline-none" placeholder="Enter your phone">
                         </div>
                         <div class="flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-4 lg:gap-8">
-                            <input type="email" class="py-3 px-5 rounded-md bg-slate-200 dark:bg-gray-950 w-full focus:outline-none" placeholder="Enter your email">
-                            <input type="text" class="py-3 px-5 rounded-md bg-slate-200 dark:bg-gray-950 w-full focus:outline-none" placeholder="Enter your subject">
+                            <input
+                            v-model="message.email"
+                            name="user_email"
+                            type="email" class="py-3 px-5 rounded-md bg-slate-200 dark:bg-gray-950 w-full focus:outline-none" placeholder="Enter your email" required>
+                            <input
+                            v-model="message.subject"
+                            name="subject"
+                            type="text" class="py-3 px-5 rounded-md bg-slate-200 dark:bg-gray-950 w-full focus:outline-none" placeholder="Enter your subject" required>
                         </div>
                         <div class="flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-4 lg:gap-8">
-                            <textarea name="" id="" cols="30" rows="7" class="py-3 px-5 rounded-md bg-slate-200 dark:bg-gray-950 w-full focus:outline-none resize-none" placeholder="Type your message"></textarea>
+                            <textarea
+                            v-model="message.message"
+                            name="message"
+                            cols="30" rows="7" class="py-3 px-5 rounded-md bg-slate-200 dark:bg-gray-950 w-full focus:outline-none resize-none" placeholder="Type your message" required></textarea>
                         </div>
                         <div class="flex justify-center">
-                            <button type="submit" class="w-full sm:w-2/4 bg-slate-200 hover:bg-slate-300 dark:bg-gray-950 dark:hover:bg-gray-950/60 py-3 rounded-md">Send Message <i class="far fa-paper-plane ml-2"></i> </button>
+                            <button
+                            type="submit"
+                            class="w-full sm:w-2/4 bg-slate-200 hover:bg-slate-300 dark:bg-gray-950 dark:hover:bg-gray-950/60 py-3 rounded-md"
+                            >
+                                <span v-if="!waiting">Send Message <i class="far fa-paper-plane ml-2"></i></span>
+                                <span v-else>Sending message...</span>
+                            </button>
                         </div>
                     </form>
+                    <div
+                    v-if="messageReport"
+                    class="text-center mt-2">
+                        <span :class="{'text-green-500':success, 'text-red-500': !success}">
+                            {{ messageReport }}
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
