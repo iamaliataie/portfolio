@@ -6,7 +6,7 @@ const toggleTheme = useToggle(isDark);
 
 </script>
 <template>
-    <header class="py-4 md:py-5 fixed top-0 left-0  w-full bg-slate-50 dark:bg-gray-900 z-40">
+    <header class="py-4 md:py-5 fixed top-0 left-0  w-full bg-slate-50 dark:bg-gray-900 z-50">
         <div class="container flex items-center justify-between md:px-0 lg:px-16 xl:px-24">
             <div>
                 <img src="../assets/ataie-logo.svg" class="w-6" alt="">
