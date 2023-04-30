@@ -37,8 +37,13 @@ const sendMessage = async () => {
                     
                 }, (error) => {
                     
-                }
-            )
+            }
+        )
+        message.name = ''
+        message.phone = ''
+        message.email = ''
+        message.subject = ''
+        message.message = ''
     }
     else {
         messageReport.value = "Your message couldn't send. Please try again!"
