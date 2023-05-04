@@ -6,10 +6,14 @@ const toggleTheme = useToggle(isDark);
 
 </script>
 <template>
-    <header class="py-4 md:py-5 fixed top-0 left-0  w-full bg-slate-50 dark:bg-gray-900 z-50">
+    <header class="py-3 fixed top-0 left-0  w-full bg-slate-50 dark:bg-gray-900 z-50">
         <div class="container flex items-center justify-between md:px-0 lg:px-16 xl:px-24">
-            <div>
-                <img src="../assets/ataie-logo.png" class="w-10" alt="">
+            <div class="flex flex-row space-x-2 items-center">
+                <img src="../assets/favicon.svg" class="w-10" alt="">
+                <div class="flex flex-col -space-y-3">
+                    <span class="text-[29px] font-semibold text-main">Ataie</span>
+                    <span class="text-sm font-semibold">Ali Ahmad</span>
+                </div>
             </div>
             <div class="relative font-semibold flex flex-row-reverse gap-3 md:flex-row md:gap-12 items-center">
                 <ul id="menu" class="flex flex-col fixed top-0 left-0 pt-20 px-6 pb-6 items-start gap-2 w-full shadow-lg bg-slate-50 border-b-2 border-gray-950 uppercase dark:bg-gray-900 text-lg transition translate-x-full ease-in-out duration-300 -z-10 rounded-b-md dark:shadow-slate-900 md:hidden dark:border-slate-100"

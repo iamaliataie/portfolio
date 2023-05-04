@@ -19,7 +19,7 @@ const props = defineProps(['about']);
                 <div class="sm:w-5/6">
                     <div class="flex flex-col space-y-6 sm:items-start sm:space-y-4 md:space-y-8" >
                         <div class="font-bold">
-                            <h4 class="text-2xl sm:text-lg md:text-2xl lg:text-3xl">Hello, <span class="text-purple-500">I'm</span></h4>
+                            <h4 class="text-2xl sm:text-lg md:text-2xl lg:text-3xl">Hello, <span class="text-main">I'm</span></h4>
                             <h1 class="text-[43px] sm:text-4xl md:text-5xl lg:text-7xl">Ali Ahmad Ataie</h1>
                         </div>
                         <div class="xl:w-5/6">

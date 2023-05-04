@@ -15,7 +15,11 @@ export default {
         lg: '4rem'
         }
       },
-    extend: {},
+    extend: {
+      colors: {
+        'main': '#CF9645'
+      }
+    },
   },
   plugins: [],
 }

@@ -22,15 +22,16 @@ const message = reactive({
 })
 
 const sendMessage = async () => {
+    waiting.value = true
+    messageReport.value = ''
     if (!message.name || !message.email || !message.subject || !message.message) {
         messageReport.value = 'name, email, subject and message fields are required.'
         success.value = false
         return
     }
-    waiting.value = true
     const {data, error} = await supabase.from('messages').insert(message)
     if (!error) {
-        messageReport.value = 'Your message has been sent successfully. Thank You!'
+        messageReport.value = 'Message sent. Thank You!'
         success.value = true
         emailjs.sendForm(emailjsServiceId, emailjsTemplateId, form.value, emailjsPublicKey)
             .then((result) => {
@@ -46,7 +47,7 @@ const sendMessage = async () => {
         message.message = ''
     }
     else {
-        messageReport.value = "Your message couldn't send. Please try again!"
+        messageReport.value = "Message not sent. Please try again!"
         success.value = false
     }
     waiting.value = false
@@ -58,25 +59,25 @@ const sendMessage = async () => {
     <section id="contact" class="py-2">
         <div class="section container border-b-2 dark:border-gray-900 xl:max-w-[1124px] w-11/12 px-0 py-20 space-y-8">
             <header class="flex flex-col text-center">
-                <h6 class="uppercase text-purple-500 font-bold">Contact</h6>
+                <h6 class="uppercase text-main font-bold">Contact</h6>
                 <h1 class="text-[30px] md:text-[40px] lg:text-[50px] font-bold">Contact With Me</h1>
             </header>
             <div class="flex flex-col md:flex-row items-left justify-left gap-8">
                 <div class="md:w-4/12 flex flex-col sm:grid sm:grid-cols-2 md:flex gap-4">
                     <div class="flex justify-center sm:flex-col items-center gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-7 rounded-lg">
-                        <i class="fa fa-map text-purple-500 text-3xl"></i>
+                        <i class="fa fa-map text-main text-3xl"></i>
                         <span class="sm:text-sm">Kabul, Afghanistan</span>
                     </div>
                     <div class="flex justify-center sm:flex-col items-center gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-7 rounded-lg">
-                        <i class="fa fa-phone text-purple-500 text-3xl"></i>
+                        <i class="fa fa-phone text-main text-3xl"></i>
                         <a href="tel:+93767014769" class="sm:text-sm">+93 - 767 - 014 - 769</a>
                     </div>
                     <div class="flex justify-center sm:flex-col items-center gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-7 rounded-lg">
-                        <i class="fa fa-envelope text-purple-500 text-3xl"></i>
+                        <i class="fa fa-envelope text-main text-3xl"></i>
                         <a href="mailto:iamaliataie@gmail.com" class="sm:text-sm">iamaliataie@gmail.com</a>
                     </div>
                     <div class="flex justify-center sm:flex-col items-center gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-7 rounded-lg">
-                        <i class="fa fa-check-circle text-purple-500 text-3xl"></i>
+                        <i class="fa fa-check-circle text-main text-3xl"></i>
                         <span class="sm:text-sm">Freelance Available</span>
                     </div>
                 </div>
@@ -120,10 +121,10 @@ const sendMessage = async () => {
                     </form>
                     <div
                     v-if="messageReport"
-                    class="text-center mt-2">
-                        <span :class="{'text-green-500':success, 'text-red-500': !success}">
-                            {{ messageReport }}
-                        </span>
+                    class="text-center mt-2 space-x-2">
+                        <i v-if="!success" class="fa fa-times-circle" :class="{'text-red-500': !success}"></i>
+                        <i v-else class="fa fa-check-circle" :class="{'text-green-500': success}"></i>
+                        <span>{{ messageReport }}</span>
                     </div>
                 </div>
             </div>
