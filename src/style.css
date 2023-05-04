@@ -10,23 +10,7 @@ html{
 body {
     @apply
         bg-slate-100 dark:bg-gray-950
-        text-gray-950 dark:text-main-light
-}
-
-.preloader{
-    animation: preloader 1.5s infinite linear;
-}
-
-@keyframes preloader{
-    0%{
-        transform: scale(.7);
-    }
-    50%{
-        transform: scale(1);
-    }
-    100%{
-        transform: scale(.7);
-    }
+        text-gray-950 dark:text-slate-50
 }
 
 .nav-dot.selected{

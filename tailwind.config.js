@@ -15,13 +15,7 @@ export default {
         lg: '4rem'
         }
       },
-    extend: {
-      fontFamily: ['Poppins', 'sans-serif'],
-      colors: {
-        'main-light': '#F8FAFC',
-        'main-red': '#ED1740',
-      }
-    },
+    extend: {},
   },
   plugins: [],
 }

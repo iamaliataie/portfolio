@@ -8,9 +8,9 @@ const props = defineProps(['works'])
 
 <template>
     <section id="portfolio" class="py-2" >
-        <div class="section container border-b-2 dark:border-gray-900 xl:max-w-[1124px] w-11/12 px-0 py-16 space-y-8">
+        <div class="section container border-b-2 dark:border-gray-900 xl:max-w-[1124px] w-11/12 px-0 py-20 space-y-8">
             <header class="flex flex-col text-center">
-                <h6 class="uppercase text-main-red font-bold">award winning projects</h6>
+                <h6 class="uppercase text-purple-500 font-bold">award winning projects</h6>
                 <h1 class="text-[30px] md:text-[40px] lg:text-[50px] font-bold">Latest Projects</h1>
             </header>
             <div class="grid grid-cols-1 items-center sm:grid-cols-2 md:grid-cols-3 gap-6">

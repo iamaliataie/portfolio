@@ -6,7 +6,7 @@ const props = defineProps(['about']);
 
 <template>
     <section id="about" class="py-2">
-        <div class="section container border-b-2 dark:border-gray-900 xl:max-w-[1124px] w-11/12 px-0 py-16 space-y-8">
+        <div class="section container border-b-2 dark:border-gray-900 xl:max-w-[1124px] w-11/12 px-0 py-20 space-y-8">
             <div
             v-motion
             :initial="{ opacity: 0, x: -80 }"
@@ -19,7 +19,7 @@ const props = defineProps(['about']);
                 <div class="sm:w-5/6">
                     <div class="flex flex-col space-y-6 sm:items-start sm:space-y-4 md:space-y-8" >
                         <div class="font-bold">
-                            <h4 class="text-2xl sm:text-lg md:text-2xl lg:text-3xl">Hello, <span class="text-main-red">I'm</span></h4>
+                            <h4 class="text-2xl sm:text-lg md:text-2xl lg:text-3xl">Hello, <span class="text-purple-500">I'm</span></h4>
                             <h1 class="text-[43px] sm:text-4xl md:text-5xl lg:text-7xl">Ali Ahmad Ataie</h1>
                         </div>
                         <div class="xl:w-5/6">
@@ -30,6 +30,7 @@ const props = defineProps(['about']);
                             <div class="flex flex-row items-center gap-4">
                                 <a href="https://github.com/iamaliataie" target="_blank" class="w-10 h-10 flex items-center justify-center bg-slate-200 hover:bg-slate-300 dark:bg-gray-900 dark:hover:bg-gray-800 rounded-md"><i class="fa-brands fa-github"></i></a>
                                 <a href="https://linkedin.com/in/iamaliataie" target="_blank" class="w-10 h-10 flex items-center justify-center bg-slate-200 hover:bg-slate-300 dark:bg-gray-900 dark:hover:bg-gray-800 rounded-md"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://instagram.com/ataie.dev" target="_blank" class="w-10 h-10 flex items-center justify-center bg-slate-200 hover:bg-slate-300 dark:bg-gray-900 dark:hover:bg-gray-800 rounded-md"><i class="fa-brands fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
