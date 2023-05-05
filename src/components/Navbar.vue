@@ -11,7 +11,7 @@ const toggleTheme = useToggle(isDark);
             <div class="flex flex-row space-x-2 items-center">
                 <img src="../assets/favicon.svg" class="w-10" alt="">
                 <div class="flex flex-col -space-y-3">
-                    <span class="text-[29px] font-semibold text-main">Ataie</span>
+                    <span class="text-[28px] md:text-[29px] font-semibold text-main">Ataie</span>
                     <span class="text-sm font-semibold">Ali Ahmad</span>
                 </div>
             </div>
