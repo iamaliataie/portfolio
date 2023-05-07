@@ -1,5 +1,7 @@
 <script setup>
 
+const selfImage = 'https://fasxyiajvwstushdwzxo.supabase.co/storage/v1/object/public/images/self/self.png'
+
 const props = defineProps(['about']);
 
 </script>
@@ -14,7 +16,7 @@ const props = defineProps(['about']);
             class="flex flex-col sm:flex-row gap-10">
                 <div class="relative sm:self-auto sm:h-auto sm:w-3/6 overflow-hidden rounded-xl">
                         <div class="absolute bottom-0 left-0 bg-slate-200 w-full dark:bg-gray-900 h-full rounded-xl -z-10"></div>
-                        <img src="../assets/ataie-main.png" alt="ataie" class="sm:absolute sm:bottom-0 sm:left-0 xl:static w-full h-full object-center object-cover z-10">
+                        <img :src="`${selfImage}`" alt="ataie" class="sm:absolute sm:bottom-0 sm:left-0 xl:static w-full h-full object-center object-cover z-10">
                     </div>
                 <div class="sm:w-5/6">
                     <div class="flex flex-col space-y-6 sm:items-start sm:space-y-4 md:space-y-8" >

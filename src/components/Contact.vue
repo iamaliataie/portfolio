@@ -12,6 +12,7 @@ const form = ref()
 const waiting = ref(false)
 const messageReport = ref('')
 const success = ref(false)
+const props = defineProps(['contact'])
 
 const message = reactive({
     name: '',
@@ -66,15 +67,15 @@ const sendMessage = async () => {
                 <div class="md:w-4/12 flex flex-col sm:grid sm:grid-cols-2 md:flex gap-4">
                     <div class="flex justify-center sm:flex-col items-center gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-7 rounded-lg">
                         <i class="fa fa-map text-main text-3xl"></i>
-                        <span class="sm:text-sm">Kabul, Afghanistan</span>
+                        <span class="sm:text-sm">{{ contact.address }}</span>
                     </div>
                     <div class="flex justify-center sm:flex-col items-center gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-7 rounded-lg">
                         <i class="fa fa-phone text-main text-3xl"></i>
-                        <a href="tel:+93767014769" class="sm:text-sm">+93 - 767 - 014 - 769</a>
+                        <a :href="`tel:${String(contact.phone).replaceAll('-','')}`" class="sm:text-sm">{{ contact.phone }}</a>
                     </div>
                     <div class="flex justify-center sm:flex-col items-center gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-7 rounded-lg">
                         <i class="fa fa-envelope text-main text-3xl"></i>
-                        <a href="mailto:ataie.dev@gmail.com" class="sm:text-sm">ataie.dev@gmail.com</a>
+                        <a :href="`mailto:${contact.email}`" class="sm:text-sm">{{ contact.email }}</a>
                     </div>
                     <div class="flex justify-center sm:flex-col items-center gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-7 rounded-lg">
                         <i class="fa fa-check-circle text-main text-3xl"></i>

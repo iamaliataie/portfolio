@@ -12,14 +12,17 @@ import Footer from './components/Footer.vue';
 
 const aboutData = ref('')
 const worksList = ref([])
-
+const contactData = ref({})
 
 const fetchData = async () => {
   const { data: about } = await supabase.from('about').select().single()
   const { data: works } = await supabase.from('works').select()
+  const { data: contact } = await supabase.from('contact').select().single()
 
   aboutData.value = about.text;
-  worksList.value = works
+  worksList.value = works;
+  contactData.value = contact;
+
 }
 
 onMounted(() => {
@@ -35,7 +38,7 @@ onMounted(() => {
     <About :about="aboutData"/>
     <Works :works="worksList"/>
     <Skills />
-    <Contact />
+    <Contact :contact="contactData"/>
     <Footer />  
   </div>
 </template>
