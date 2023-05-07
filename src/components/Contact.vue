@@ -74,7 +74,7 @@ const sendMessage = async () => {
                     </div>
                     <div class="flex justify-center sm:flex-col items-center gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-7 rounded-lg">
                         <i class="fa fa-envelope text-main text-3xl"></i>
-                        <a href="mailto:iamaliataie@gmail.com" class="sm:text-sm">iamaliataie@gmail.com</a>
+                        <a href="mailto:ataie.dev@gmail.com" class="sm:text-sm">ataie.dev@gmail.com</a>
                     </div>
                     <div class="flex justify-center sm:flex-col items-center gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-7 rounded-lg">
                         <i class="fa fa-check-circle text-main text-3xl"></i>
