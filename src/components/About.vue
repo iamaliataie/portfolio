@@ -1,6 +1,6 @@
 <script setup>
 
-const selfImage = 'https://fasxyiajvwstushdwzxo.supabase.co/storage/v1/object/public/images/self/self.png'
+const baseUrl = 'https://fasxyiajvwstushdwzxo.supabase.co/storage/v1/object/public/images/self/'
 
 const props = defineProps(['about']);
 
@@ -16,7 +16,7 @@ const props = defineProps(['about']);
             class="flex flex-col sm:flex-row gap-10">
                 <div class="relative sm:self-auto sm:h-auto sm:w-3/6 overflow-hidden rounded-xl">
                         <div class="absolute bottom-0 left-0 bg-slate-200 w-full dark:bg-gray-900 h-full rounded-xl -z-10"></div>
-                        <img :src="`${selfImage}`" alt="ataie" class="sm:absolute sm:bottom-0 sm:left-0 xl:static w-full h-full object-center object-cover z-10">
+                        <img :src="`${baseUrl}${about.photo}`" alt="ataie" class="sm:absolute sm:bottom-0 sm:left-0 xl:static w-full h-full object-center object-cover z-10">
                     </div>
                 <div class="sm:w-5/6">
                     <div class="flex flex-col space-y-6 sm:items-start sm:space-y-4 md:space-y-8" >
@@ -25,7 +25,7 @@ const props = defineProps(['about']);
                             <h1 class="text-[43px] sm:text-4xl md:text-5xl lg:text-7xl">Ali Ahmad Ataie</h1>
                         </div>
                         <div class="xl:w-5/6">
-                            <p class="sm:text-sm lg:text-lg">{{ about }}</p>
+                            <p class="sm:text-sm lg:text-lg">{{ about.text }}</p>
                         </div>
                         <div class="flex flex-col space-y-4">
                             <p class="uppercase font-semibold sm:text-sm md:text-[16px]">follow me on</p>

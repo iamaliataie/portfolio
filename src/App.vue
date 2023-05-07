@@ -10,7 +10,7 @@ import Skills from './components/Skills.vue';
 import Contact from './components/Contact.vue';
 import Footer from './components/Footer.vue';
 
-const aboutData = ref('')
+const aboutData = ref({})
 const worksList = ref([])
 const contactData = ref({})
 
@@ -19,7 +19,7 @@ const fetchData = async () => {
   const { data: works } = await supabase.from('works').select()
   const { data: contact } = await supabase.from('contact').select().single()
 
-  aboutData.value = about.text;
+  aboutData.value = about;
   worksList.value = works;
   contactData.value = contact;
 
