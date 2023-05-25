@@ -1,14 +1,28 @@
 <template>
-    <section id="home" class="py-2">
-        <div class="section container flex flex-col md:flex-row items-center sm:pt-28 md:pt-8 pb-10 justify-center sm:justify-between border-b-2 dark:border-gray-900 xl:max-w-[1124px] w-11/12 px-0 min-h-screen space-y-10">
-            <div class="w-full md:w-1/2 flex flex-col space-y-10">
-                <p class="font-bold text-5xl sm:text-6xl md:text-5xl lg:text-7xl text-center md:text-left"><img src="../assets/favicon.svg" alt="" class="sm:hidden w-10 inline"> Building<br>beautiful web experiences.</p>
-                <div class="flex flex-row items-center justify-center md:justify-start space-x-6">
-                    <a href="#about" class="bg-main px-3 py-2 rounded-md text-slate-50 hover:bg-main/90 transition duration-200">More about me</a>
-                    <a href="CV-AliAhmadAtaie.pdf" target="_blank" class="px-3 py-2 rounded-md text-main hover:text-slate-50 hover:bg-main transition duration-200">Download CV</a>
-                </div>
+    <section id="home" class="pb-3">
+        <div class="relative section container xl:max-w-6xl min-h-[550px] flex flex-col items-center justify-center gap-10 pt-20 md:pt-0">
+            <div class="flex flex-col-reverse md:flex-row gap-6 items-center justify-between w-full">
+                <div class="text-center md:text-left">
+                    <span class="text-xl">Hello, I'm</span>
+                    <h1 class="text-3xl sm:text-5xl md:text-5xl lg:text-7xl font-bold">Ali Ahmad <span class="text-main">Ataie</span></h1>
+                    <h2 class="text-xl sm:text-3xl md:text-3xl lowercase">a web developer</h2>
+                    <div class="flex flex-row gap-4 items-center justify-center md:justify-start mt-8 md:mt-4">
+                        <a href="#contact" class="text-sm px-3 py-2 rounded-md bg-main text-white">Hire me</a>
+                        <a href="#portfolio" class="text-sm px-3 py-2 rounded-md bg-main text-white">View my portfolio</a>
+                    </div>
+              </div>
+              <div class="hidden md:flex w-full h-60 sm:w-96 md:h-full md:w-2/6 lg:w-2/6  p-2 md:p-0">
+                <img src="../assets/ataie.jpg" alt="ataie" class="w-full h-full object-cover rounded-md">
+              </div>
             </div>
-            <img src="../assets/header-image.png" alt="ali" class="w-full hidden sm:flex sm:w-3/4 md:w-1/2 lg:w-[500px] self-center">
+            <div class="md:absolute bottom-6 left-0 flex flex-col-reverse md:flex-row items-center justify-between container">
+              <div class="flex flex-row items-center gap-4 text-2xl">
+                <a href="https://github.com/iamaliataie" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/iamaliataie" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://instagram.com/ataie.dev" target="_blank"><i class="fab fa-instagram"></i></a>
+              </div>
+              <a href="mailto:ataie.dev@gmail.com" class="text-lg">ataie.dev@gmail.com</a>
+            </div>
         </div>
     </section>
 </template>

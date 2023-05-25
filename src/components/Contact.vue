@@ -92,7 +92,7 @@ const sendMessage = async () => {
                             <input
                             v-model="message.phone"
                             name="user_phone"
-                            type="text" class="py-3 px-5 rounded-md bg-slate-200 dark:bg-gray-950 w-full focus:outline-none" placeholder="Enter your phone">
+                            type="text" class="py-3 px-5 rounded-md bg-slate-200 dark:bg-gray-950 w-full focus:outline-none" placeholder="Enter your phone (optional)">
                         </div>
                         <div class="flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-4 lg:gap-8">
                             <input
