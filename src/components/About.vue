@@ -43,11 +43,11 @@ const props = defineProps(['about']);
             v-motion
             :initial="{ opacity: 0, x: -80 }"
             :visibleOnce="{ opacity: 1, x: 0, transition: { type: 'keyframes', duration: 500, ease: 'easeIn'}}"
-            class="flex flex-col sm:flex-row gap-10 px-2 sm:p-0 lg:w-10/12 mx-auto items-center">
-                <img src="../assets/self.jpg" alt="ataie" class="sm:w-48 md:w-60 lg:w-80 rounded-md">
-                <div >
-                    <p class="text-justify md:text-lg">I have completed my bachelor's degree in computer science in 2022. I am a web developer from Kabul, Afghanistan with a vast array of knowledge in many different frontend and backend languages, responsive frameworks, databases, and best code practices. My objective is simply to be the best web developer that I can be and to contribute to the technology industry all that I know and can be.</p>
-                    <p class="text-justify md:text-lg mt-6">In my leisure time, I enjoy reading poets and novels and spending quality time with my beloved family.</p>
+            class="flex flex-col md:flex-row gap-10 px-2 sm:p-0 xl:w-10/12 mx-auto items-center">
+                <img src="../assets/self.jpg" alt="ataie" class="sm:w-96 md:w-60 lg:w-80 rounded-md">
+                <div class="sm:w-3/4" >
+                    <p class="text-justify md:text-sm lg:text-lg">I have completed my bachelor's degree in computer science in 2022. I am a web developer from Kabul, Afghanistan with a vast array of knowledge in many different frontend and backend languages, responsive frameworks, databases, and best code practices. My objective is simply to be the best web developer that I can be and to contribute to the technology industry all that I know and can be.</p>
+                    <p class="text-justify md:text-sm lg:text-lg mt-6">In my leisure time, I enjoy reading poets and novels and spending quality time with my beloved family.</p>
                     <a href="CV-AliAhmadAtaie.pdf" target="_blank" class="text-sm px-3 py-2 rounded-md bg-white text-main mt-6 inline-block">Download CV</a>
                 </div>
             </div>
