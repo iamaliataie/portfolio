@@ -27,7 +27,8 @@ const fetchData = async () => {
 
 onMounted(() => {
     let navbarScript = document.createElement('script');
-    navbarScript.setAttribute('src', 'src/custom.js');
+    navbarScript.setAttribute('src', '/src/custom.js');
+    navbarScript.setAttribute('type', 'module');
     console.log(navbarScript);
     document.head.appendChild(navbarScript);
     fetchData();
