@@ -18,8 +18,10 @@
     "@supabase/supabase-js": "^2.21.0",
     "@vueuse/core": "^10.0.2",
     "@vueuse/motion": "^2.0.0-beta.12",
+    "pinia": "^2.1.4",
     "swiper": "^9.2.4",
-    "vue": "^3.2.47"
+    "vue": "^3.2.47",
+    "vue-router": "^4.2.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",

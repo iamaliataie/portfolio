@@ -9,6 +9,9 @@ import Works from './components/Works.vue';
 import Skills from './components/Skills.vue';
 import Contact from './components/Contact.vue';
 import Footer from './components/Footer.vue';
+import HomeView from './views/HomeView.vue';
+
+
 
 const aboutData = ref({})
 const worksList = ref([])
@@ -33,13 +36,14 @@ onMounted(() => {
 
 <template>
   <div>
-    <Navbar />
+    <RouterView />
+    <!-- <Navbar />
     <Header />
     <About :about="aboutData"/>
     <Works :works="worksList"/>
     <Skills />
     <Contact :contact="contactData"/>
-    <Footer />  
+    <Footer />   -->
   </div>
 </template>
 
