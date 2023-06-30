@@ -26,6 +26,10 @@ const fetchData = async () => {
 }
 
 onMounted(() => {
+    let navbarScript = document.createElement('script');
+    navbarScript.setAttribute('src', 'src/custom.js');
+    console.log(navbarScript);
+    document.head.appendChild(navbarScript);
     fetchData();
 })
 
