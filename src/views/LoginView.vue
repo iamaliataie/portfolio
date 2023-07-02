@@ -1,19 +1,27 @@
 <script setup>
-import { reactive, onMounted } from 'vue';
-import { supabase } from '../supabase';
+import { onMounted, reactive, watch, ref } from 'vue';
+import { useRouter } from 'vue-router';
+import { usePortfolioStore } from '../stores/portfolio';
+
+const store = usePortfolioStore();
+const router = useRouter();
+const loading = ref(false)
+
 
 const credentials = reactive({
     email: '',
     password: ''
 })
 const handleLogin = async () => {
-    const response = await supabase.auth.signInWithPassword(credentials);
-    console.log(response);
+    loading.value = true
+    await store.handleLogin(credentials);
+    loading.value = false
 }
 
-onMounted( async () => {
-    // const { data: about } = await supabase.from('about').select().single();
-    // console.log(about);
+watch(store,() => {
+    if (store.isLoggedIn) {
+        router.push('/dashboard')
+    }
 })
 
 </script>
@@ -30,8 +38,14 @@ onMounted( async () => {
             <form @submit.prevent="handleLogin" class="flex flex-col items-center space-y-4">
                 <input type="email" v-model="credentials.email" placeholder="email" class="p-3 rounded-md focus:outline-none">
                 <input type="password" v-model="credentials.password" placeholder="password" class="p-3 rounded-md focus:outline-none">
-                <button type="submit" class="bg-main py-2 px-3 rounded-md text-white focus:outline-none dark:bg-red-500">Login</button>
+                <button type="submit" class="bg-main py-2 px-3 rounded-md text-white focus:outline-none " 
+                :disabled="loading"
+                >
+                    Login
+                </button>
             </form>
+            <p v-if="store.errorMessage">{{ store.errorMessage }}</p>
+            <p v-if="loading">please wait</p>
         </div>
     </div>
 </template>
