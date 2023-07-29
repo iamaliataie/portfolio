@@ -13,14 +13,14 @@ const credentials = reactive({
     password: ''
 })
 const handleLogin = async () => {
-    loading.value = true
+    loading.value = true;
     await store.handleLogin(credentials);
-    loading.value = false
+    loading.value = false;
 }
 
 watch(store,() => {
     if (store.isLoggedIn) {
-        router.push('/dashboard')
+        router.push('/dashboard');
     }
 })
 

@@ -8,7 +8,10 @@ export const usePortfolioStore = defineStore('portfolio', () => {
     const errorMessage = ref('');
 
     const handleLogin = async (credentials) => {
-        const { email, password } = credentials
+
+        errorMessage.value = '';
+        const { email, password } = credentials;
+
         const {data, error} = await supabase.auth.signInWithPassword({
             email,
             password

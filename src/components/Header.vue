@@ -1,6 +1,6 @@
 <template>
     <section id="home" class="pb-3">
-        <div class="relative section container xl:max-w-6xl min-h-screen md:min-h-[550px] flex flex-col items-center justify-center gap-10 pt-20 md:pt-0">
+        <div class="relative section container xl:max-w-7xl min-h-screen flex flex-col items-center justify-center gap-10 pt-20 md:pt-0">
             <div class="flex flex-col-reverse md:flex-row gap-6 items-center justify-between w-full">
                 <div class="text-center md:text-left">
                     <span class="text-xl">Hello, I'm</span>
