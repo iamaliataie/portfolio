@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_18" data-name="Path 18" d="M-3.552-.051h477.8V492.44H-3.552Z" transform="translate(65.407 0.051)"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Path_13" data-name="Path 13" d="M-3.552-.051h489.3V492.44H-3.552Z" transform="translate(3.552 0.051)"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <path id="Path_15" data-name="Path 15" d="M-3.552-.051H705.622V492.44H-3.552Z" transform="translate(3.552 0.051)"/>
+    </clipPath>
+    <clipPath id="clip-Artboard_2">
+      <rect width="512" height="512"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_2" data-name="Artboard – 2" clip-path="url(#clip-Artboard_2)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="256" cy="256" r="256" fill="none"/>
+    <g id="Group_12" data-name="Group 12" transform="translate(-44.856 8)" clip-path="url(#clip-path)">
+      <g id="Group_9" data-name="Group 9" transform="translate(50.36)" clip-path="url(#clip-path-2)">
+        <path id="Path_12" data-name="Path 12" d="M-2.485,115.06,112.058.542,226.576,115.084,112.034,229.6Z" transform="translate(22.648 132.826)" fill="#cf9645"/>
+      </g>
+      <g id="Group_11" data-name="Group 11" transform="translate(-169.515)" clip-path="url(#clip-path-3)">
+        <path id="Path_16" data-name="Path 16" d="M-1.712,76.8,169.324,247.839,1.577,415.586,78.431,492.44,79.955,491l166.223-166.3,4.653-4.733q57.52-57.36,37.7-97.231a135.658,135.658,0,0,0-26.714-36.1L75.142-.051Z" transform="translate(415.584 0.051)" fill="#ba8437" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>
