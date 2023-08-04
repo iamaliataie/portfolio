@@ -21,7 +21,7 @@
                 <a href="https://linkedin.com/in/iamaliataie" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://instagram.com/ataie.dev" target="_blank"><i class="fab fa-instagram"></i></a>
               </div>
-              <a href="mailto:ataie.dev@gmail.com" class="text-lg">ataie.dev@gmail.com</a>
+              <a href="mailto:hello@ataie.dev" class="text-lg">hello@ataie.dev</a>
             </div>
         </div>
     </section>
