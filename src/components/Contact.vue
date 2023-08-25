@@ -12,7 +12,7 @@ const form = ref()
 const waiting = ref(false)
 const messageReport = ref('')
 const success = ref(false)
-const props = defineProps(['contact'])
+const props = defineProps(['loading', 'contact'])
 
 const message = reactive({
     name: '',
@@ -67,15 +67,18 @@ const sendMessage = async () => {
                 <div class="md:w-4/12 flex flex-col sm:grid sm:grid-cols-2 md:flex gap-4">
                     <div class="flex justify-center sm:flex-col items-center gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-7 rounded-lg">
                         <i class="fa fa-map text-main text-3xl"></i>
-                        <span class="">{{ contact.address }}</span>
+                        <span v-if="!loading" class="">{{ contact.address }}</span>
+                        <div v-else class="h-[16px] w-3/6 animate-pulse bg-slate-300 dark:bg-slate-700 rounded-md"></div>
                     </div>
                     <div class="flex justify-center sm:flex-col items-center gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-7 rounded-lg">
                         <i class="fa fa-phone text-main text-3xl"></i>
-                        <a :href="`tel:${String(contact.phone).replaceAll('-','')}`" class="">{{ contact.phone }}</a>
+                        <a v-if="!loading" :href="`tel:${String(contact.phone).replaceAll('-','')}`" class="">{{ contact.phone }}</a>
+                        <div v-else class="h-[16px] w-3/6 animate-pulse bg-slate-300 dark:bg-slate-700 rounded-md"></div>
                     </div>
                     <div class="flex justify-center sm:flex-col items-center gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-7 rounded-lg">
                         <i class="fa fa-envelope text-main text-3xl"></i>
-                        <a :href="`mailto:${contact.email}`" class="">{{ contact.email }}</a>
+                        <a v-if="!loading" :href="`mailto:${contact.email}`" class="">{{ contact.email }}</a>
+                        <div v-else class="h-[16px] w-3/6 animate-pulse bg-slate-300 dark:bg-slate-700 rounded-md"></div>
                     </div>
                     <div class="flex justify-center sm:flex-col items-center gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-7 rounded-lg">
                         <i class="fa fa-check-circle text-main text-3xl"></i>
