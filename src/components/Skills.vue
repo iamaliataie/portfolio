@@ -1,6 +1,6 @@
 <template>
     <section id="skills" class="py-2">
-        <div class="section container border-b-2 dark:border-gray-900 xl:max-w-[1124px] w-11/12 px-0 py-20 space-y-8">
+        <div class="section container border-b-2 dark:border-gray-900 xl:max-w-7xl w-11/12 px-0 py-20 space-y-8">
             <header class="flex flex-col text-center">
                 <h6 class="uppercase text-main font-bold">Technology</h6>
                 <h1 class="text-[30px] md:text-[40px] lg:text-[50px] font-bold">Top Skills</h1>
