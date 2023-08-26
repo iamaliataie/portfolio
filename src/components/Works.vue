@@ -38,7 +38,7 @@ const props = defineProps(['loading', 'works'])
                         </div>
                     </div>
                 </div>
-            <div
+            <!-- <div
             v-else
             class="grid grid-cols-1 items-center sm:grid-cols-2 md:grid-cols-3 gap-6">
                 <div v-for="work in works"
@@ -51,6 +51,27 @@ const props = defineProps(['loading', 'works'])
                         <div class="flex flex-row gap-4 text-xl md:text-sm lg:text-lg">
                             <a :href="`https://${work.github}`" target="_blank" class="text-slate-50"><i class="fa-brands fa-github"></i></a>
                             <a :href="`https://${work.demo}`" target="_blank" class="text-slate-50"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div
+            v-else
+            class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div 
+                v-for="work in works"
+                class="shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-10 px-8 sm:py-12 sm:px-20 md:py-8 md:px-12 lg:py-12 lg:px-16 xl:px-20 xl:py-16 rounded-lg">
+                    <div class="flex flex-col space-y-10">
+                        <div class="text-center flex flex-col space-y-6">
+                            <h2 class="text-2xl sm:text-4xl md:text-[23px] lg:text-3xl xl:text-4xl font-bold text-center">{{ work.title }}</h2>
+                            <p class="text-lg sm:text-2xl md:text-lg lg:text-xl xl:text-2xl">{{ work.description }}</p>
+                            <div class="flex justify-center items-center space-x-4">
+                                <a :href="`https://${work.github}`" target="_blank" class="px-3 py-1 bg-slate-200 dark:bg-slate-800 sm:text-xl md:text-[15px] lg:text-xl rounded-md hover:bg-slate-400 dark:hover:bg-slate-950">Github</a>
+                                <a :href="`https://${work.demo}`" target="_blank" class="px-3 py-1 bg-slate-200 dark:bg-slate-800 sm:text-xl md:text-[15px] lg:text-xl rounded-md hover:bg-slate-400 dark:hover:bg-slate-950">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <img :src="`${baseUrl}${work.image}`" alt="image" class="w-full">
                         </div>
                     </div>
                 </div>
