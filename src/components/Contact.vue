@@ -85,7 +85,7 @@ const sendMessage = async () => {
                         <span class="xl:text-lg">Freelance Available</span>
                     </div>
                 </div>
-                <div class="md:w-8/12 rounded-lg bg-slate-50 dark:bg-gray-900 dark:shadow-black shadow-lg p-6 sm:p-12 md:p-6 lg:p-12">
+                <div class="md:w-8/12 rounded-lg bg-slate-50 dark:bg-gray-900 dark:shadow-black shadow-lg p-6 sm:p-12 md:p-6 lg:p-12 xl:text-lg">
                     <form ref="form" @submit.prevent="sendMessage" class="space-y-6 sm:space-y-8">
                         <div class="flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-4 lg:gap-8">
                             <input
