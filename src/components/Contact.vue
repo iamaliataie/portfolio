@@ -67,22 +67,22 @@ const sendMessage = async () => {
                 <div class="md:w-4/12 flex flex-col sm:grid sm:grid-cols-2 md:flex gap-4">
                     <div class="flex justify-center sm:flex-col items-center gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-7 rounded-lg">
                         <i class="fa fa-map text-main text-3xl"></i>
-                        <span v-if="!loading" class="">{{ contact.address }}</span>
+                        <span v-if="!loading" class="xl:text-lg">{{ contact.address }}</span>
                         <div v-else class="h-[16px] w-3/6 animate-pulse bg-slate-300 dark:bg-slate-700 rounded-md"></div>
                     </div>
                     <div class="flex justify-center sm:flex-col items-center gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-7 rounded-lg">
                         <i class="fa fa-phone text-main text-3xl"></i>
-                        <a v-if="!loading" :href="`tel:${String(contact.phone).replaceAll('-','')}`" class="">{{ contact.phone }}</a>
+                        <a v-if="!loading" :href="`tel:${String(contact.phone).replaceAll('-','')}`" class="xl:text-lg">{{ contact.phone }}</a>
                         <div v-else class="h-[16px] w-3/6 animate-pulse bg-slate-300 dark:bg-slate-700 rounded-md"></div>
                     </div>
                     <div class="flex justify-center sm:flex-col items-center gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-7 rounded-lg">
                         <i class="fa fa-envelope text-main text-3xl"></i>
-                        <a v-if="!loading" :href="`mailto:${contact.email}`" class="">{{ contact.email }}</a>
+                        <a v-if="!loading" :href="`mailto:${contact.email}`" class="xl:text-lg">{{ contact.email }}</a>
                         <div v-else class="h-[16px] w-3/6 animate-pulse bg-slate-300 dark:bg-slate-700 rounded-md"></div>
                     </div>
                     <div class="flex justify-center sm:flex-col items-center gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-7 rounded-lg">
                         <i class="fa fa-check-circle text-main text-3xl"></i>
-                        <span class="">Freelance Available</span>
+                        <span class="xl:text-lg">Freelance Available</span>
                     </div>
                 </div>
                 <div class="md:w-8/12 rounded-lg bg-slate-50 dark:bg-gray-900 dark:shadow-black shadow-lg p-6 sm:p-12 md:p-6 lg:p-12">
