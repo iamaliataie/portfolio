@@ -15,7 +15,7 @@ const props = defineProps(['loading', 'works'])
             </header>
             <div
                 v-if="loading"
-                class="grid grid-cols-1 items-center sm:grid-cols-2 md:grid-cols-3 gap-6">
+                class="grid grid-cols-1 items-center  md:grid-cols-2 gap-6">
                     <div class="">
                         <div class="animate-pulse flex items-center justify-center h-72 bg-slate-300 rounded dark:bg-slate-700">
                             <svg class="w-10 h-10 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
