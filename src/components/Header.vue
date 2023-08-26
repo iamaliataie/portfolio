@@ -16,12 +16,12 @@
               </div>
             </div>
             <div class="md:absolute bottom-6 left-0 flex flex-col space-y-2 md:flex-row items-center justify-between container">
-              <div class="flex flex-row items-center gap-4 text-2xl">
+              <div class="flex flex-row items-center gap-4 text-2xl xl:text-3xl">
                 <a href="https://github.com/iamaliataie" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://linkedin.com/in/iamaliataie" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://instagram.com/ataie.dev" target="_blank"><i class="fab fa-instagram"></i></a>
               </div>
-              <a href="mailto:hello@ataie.dev" class="text-lg">hello@ataie.dev</a>
+              <a href="mailto:hello@ataie.dev" class="text-lg xl:text-2xl">hello@ataie.dev</a>
             </div>
         </div>
     </section>
