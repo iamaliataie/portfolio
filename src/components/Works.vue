@@ -53,7 +53,7 @@ const props = defineProps(['loading', 'works'])
             class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div 
                 v-for="work in works"
-                class="shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-10 px-6 sm:py-12 sm:px-20 md:py-8 md:px-12 lg:py-12 lg:px-16 xl:px-20 xl:py-16 rounded-lg">
+                class="shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-10 px-5 sm:py-12 sm:px-20 md:py-8 md:px-12 lg:py-12 lg:px-16 xl:px-20 xl:py-16 rounded-lg">
                     <div class="flex flex-col space-y-10">
                         <div class="text-center flex flex-col space-y-6">
                             <h2 class="text-2xl sm:text-4xl md:text-[23px] lg:text-3xl xl:text-4xl font-bold text-center">{{ work.title }}</h2>
