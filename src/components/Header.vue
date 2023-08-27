@@ -3,7 +3,7 @@
         <div class="relative section container xl:max-w-7xl min-h-screen flex flex-col items-center justify-center gap-10 pt-20 md:pt-0">
             <div class="flex flex-col-reverse md:flex-row gap-6 items-center justify-between w-full">
                 <div class="text-center md:text-left">
-                    <span class="text-xl">Hello, I'm</span>
+                    <span class="text-xl xl:text-3xl">Hello, I'm</span>
                     <h1 class="text-4xl sm:text-5xl lg:text-7xl xl:text-[88px] font-bold">Ali Ahmad <span class="text-main">Ataie</span></h1>
                     <h2 class="text-2xl sm:text-3xl lowercase">a web developer</h2>
                     <div class="flex flex-row gap-4 items-center justify-center md:justify-start mt-8 md:mt-4">
