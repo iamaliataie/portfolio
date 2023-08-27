@@ -5,7 +5,7 @@
                 <div class="text-center md:text-left">
                     <span class="text-xl xl:text-3xl">Hello, I'm</span>
                     <h1 class="text-4xl sm:text-5xl lg:text-7xl xl:text-[88px] font-bold">Ali Ahmad <span class="text-main">Ataie</span></h1>
-                    <h2 class="text-2xl sm:text-3xl lowercase">a web developer</h2>
+                    <h2 class="text-2xl sm:text-3xl xl:text-5xl lowercase">a web developer</h2>
                     <div class="flex flex-row gap-4 items-center justify-center md:justify-start mt-8 md:mt-4">
                         <a href="#contact" class="text-sm px-3 py-2 rounded-md bg-main text-white">Hire me</a>
                         <a href="#portfolio" class="text-sm px-3 py-2 rounded-md bg-main text-white">View my portfolio</a>
