@@ -20,23 +20,23 @@ const toggleTheme = useToggle(isDark);
                 >
                     <li class="w-full">
                         <a aria-label="home"
-                            href="#home" class="mobile-nav-link w-full bg-slate-200 py-2 pl-4 rounded-md hover:bg-slate-300 dark:bg-gray-950 dark:hover:bg-gray-800">Home</a>
+                            href="#home" class="mobile-nav-link w-full bg-slate-200 py-2 pl-4 rounded-md hover:bg-slate-300 dark:bg-gray-950 dark:hover:bg-gray-800 inline-block">Home</a>
                     </li>
                     <li class="w-full">
                         <a aria-label="about"
-                            href="#about" class="mobile-nav-link w-full bg-slate-200 py-2 pl-4 rounded-md hover:bg-slate-300 dark:bg-gray-950 dark:hover:bg-gray-800">About</a>
+                            href="#about" class="mobile-nav-link w-full bg-slate-200 py-2 pl-4 rounded-md hover:bg-slate-300 dark:bg-gray-950 dark:hover:bg-gray-800  inline-block">About</a>
                     </li>
                     <li class="w-full">
                          <a aria-label="portfolio"
-                             href="#portfolio" class="mobile-nav-link w-full bg-slate-200 py-2 pl-4 rounded-md hover:bg-slate-300 dark:bg-gray-950 dark:hover:bg-gray-800">Portfolio</a>
+                             href="#portfolio" class="mobile-nav-link w-full bg-slate-200 py-2 pl-4 rounded-md hover:bg-slate-300 dark:bg-gray-950 dark:hover:bg-gray-800  inline-block">Portfolio</a>
                     </li>
                     <li class="w-full">
                         <a aria-label="skills"
-                            href="#skills" class="mobile-nav-link w-full bg-slate-200 py-2 pl-4 rounded-md hover:bg-slate-300 dark:bg-gray-950 dark:hover:bg-gray-800">Skills</a>
+                            href="#skills" class="mobile-nav-link w-full bg-slate-200 py-2 pl-4 rounded-md hover:bg-slate-300 dark:bg-gray-950 dark:hover:bg-gray-800  inline-block">Skills</a>
                     </li>
                     <li class="w-full">
                         <a aria-label="contact"
-                            href="#contact" class="mobile-nav-link w-full bg-slate-200 py-2 pl-4 rounded-md hover:bg-slate-300 dark:bg-gray-950 dark:hover:bg-gray-800">Contact</a>
+                            href="#contact" class="mobile-nav-link w-full bg-slate-200 py-2 pl-4 rounded-md hover:bg-slate-300 dark:bg-gray-950 dark:hover:bg-gray-800  inline-block">Contact</a>
                     </li>
                 </ul>
                 <ul  class="hidden text-sm lg:text-md xl:text-lg md:flex flex-row gap-6 lg:gap-8 bg-transparent dark:bg-transparent items-center uppercase">
