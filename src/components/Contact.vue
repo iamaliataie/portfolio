@@ -60,8 +60,8 @@ const sendMessage = async () => {
     <section id="contact" class="py-2">
         <div class="section container border-b-2 dark:border-gray-900 xl:max-w-7xl w-11/12 px-0 py-20 space-y-8">
             <header class="flex flex-col text-center">
-                <h6 class="uppercase text-main font-bold">Contact</h6>
-                <h1 class="text-[30px] md:text-[40px] lg:text-[50px] font-bold">Contact With Me</h1>
+                <h1 class="uppercase text-main font-bold">Contact</h1>
+                <h2 class="text-[30px] md:text-[40px] lg:text-[50px] font-bold">Contact With Me</h2>
             </header>
             <div class="flex flex-col md:flex-row items-left justify-left gap-8">
                 <div class="md:w-4/12 flex flex-col sm:grid sm:grid-cols-2 md:flex gap-4">
