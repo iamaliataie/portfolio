@@ -64,7 +64,7 @@ const props = defineProps(['loading', 'works'])
                             </div>
                         </div>
                         <div class="w-full">
-                            <img :src="`${baseUrl}${work.image}`" alt="image" class="w-full">
+                            <img :src="`${baseUrl}${work.image}`" alt="image" class="w-full h-full">
                         </div>
                     </div>
                 </div>
