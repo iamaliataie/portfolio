@@ -8,10 +8,10 @@
                     <h2 class="text-2xl sm:text-3xl xl:text-5xl lowercase">a web developer</h2>
                     <div class="flex flex-row gap-4 items-center justify-center md:justify-start mt-8 md:mt-4">
                         <a 
-                            aria-label="contact"
+                            aria-label="hire me"
                             href="#contact" class="text-sm xl:text-lg px-3 py-2 rounded-md bg-main text-white">Hire me</a>
                         <a 
-                            aria-label="portfolio"
+                            aria-label="view my portfolio"
                             href="#portfolio" class="text-sm xl:text-lg px-3 py-2 rounded-md bg-main text-white">View my portfolio</a>
                     </div>
               </div>
@@ -28,7 +28,7 @@
                 <a aria-label="link to instagram"
                     href="https://instagram.com/ataie.dev" target="_blank"><i class="fab fa-instagram"></i></a>
               </div>
-              <a aria-label="email address"
+              <a aria-label="hello@ataie.dev"
                   href="mailto:hello@ataie.dev" class="text-lg xl:text-2xl">hello@ataie.dev</a>
             </div>
         </div>
