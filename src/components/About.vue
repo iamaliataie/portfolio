@@ -44,7 +44,7 @@ const props = defineProps(['about']);
             :initial="{ opacity: 0, x: -80 }"
             :visibleOnce="{ opacity: 1, x: 0, transition: { type: 'keyframes', duration: 500, ease: 'easeIn'}}"
             class="flex flex-col md:flex-row gap-10 px-2 sm:p-0 xl:w-10/12 mx-auto items-center">
-                <img src="../assets/self.jpg" alt="ataie" class="w-full sm:w-96 md:w-60 lg:w-80 h-full rounded-md">
+                <img src="../assets/self.webp" alt="ataie" class="w-full sm:w-96 md:w-60 lg:w-80 h-full rounded-md">
                 <div class="sm:w-3/4" >
                     <p class="text-justify md:text-sm lg:text-xl">I have completed my bachelor's degree in computer science in 2022. I am a web developer from Kabul, Afghanistan with a vast array of knowledge in many different frontend and backend languages, responsive frameworks, databases, and best code practices. My objective is simply to be the best web developer that I can be and to contribute to the technology industry all that I know and can be.</p>
                     <p class="text-justify md:text-sm lg:text-xl mt-6">In my leisure time, I enjoy reading poets and novels and spending quality time with my beloved family.</p>
