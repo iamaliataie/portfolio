@@ -2,8 +2,8 @@
     <section id="skills" class="py-2">
         <div class="section container border-b-2 dark:border-gray-900 xl:max-w-7xl w-11/12 px-0 py-20 space-y-8">
             <header class="flex flex-col text-center">
-                <h6 class="uppercase text-main font-bold">Technology</h6>
-                <h1 class="text-[30px] md:text-[40px] lg:text-[50px] font-bold">Top Skills</h1>
+                <h1 class="uppercase text-main font-bold">Technology</h1>
+                <h2 class="text-[30px] md:text-[40px] lg:text-[50px] font-bold">Top Skills</h2>
             </header>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-8">
                 <div v-motion-slide-visible-once-bottom class="flex flex-row items-center justify-center gap-2 sm:gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-8 rounded-lg">
