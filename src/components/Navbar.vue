@@ -25,7 +25,10 @@ const toggleTheme = useToggle(isDark);
                     <a href="#contact" class="mobile-nav-link w-full bg-slate-200 py-2 pl-4 rounded-md hover:bg-slate-300 dark:bg-gray-950 dark:hover:bg-gray-800">Contact</a>
                 </ul>
                 <ul  class="hidden text-sm lg:text-md xl:text-lg md:flex flex-row gap-6 lg:gap-8 bg-transparent dark:bg-transparent items-center uppercase">
-                    <a href="#home" class="nav-link hover:border-b-2 hover:border-dotted border-gray-950 dark:border-slate-50 selected">Home</a>
+                    <li>
+                        <a aria-label="home"
+                            href="#home" class="nav-link hover:border-b-2 hover:border-dotted border-gray-950 dark:border-slate-50 selected">Home</a>
+                    </li>
                     <a href="#about" class="nav-link hover:border-b-2 hover:border-dotted border-gray-950 dark:border-slate-50">About</a>
                     <a href="#portfolio" class="nav-link hover:border-b-2 hover:border-dotted border-gray-950 dark:border-slate-50">Portfolio</a>
                     <a href="#skills" class="nav-link hover:border-b-2 hover:border-dotted border-gray-950 dark:border-slate-50">Skills</a>
