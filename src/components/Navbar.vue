@@ -33,7 +33,9 @@ const toggleTheme = useToggle(isDark);
                 </ul>
             </div>
             <div class="flex flex-row gap-4">
-                <button class="w-6 flex items-center justify-center text-xl md:text-md xl:text-lg" @click="toggleTheme()">
+                <button 
+                    aria-label="theme-toggle"
+                    class="w-6 flex items-center justify-center text-xl md:text-md xl:text-lg" @click="toggleTheme()">
                     <span v-if="isDark">
                         <i class="fa fa-sun "></i>
                     </span>
@@ -42,10 +44,14 @@ const toggleTheme = useToggle(isDark);
                     </span>
                 </button>
                 <div class="md:hidden z-20 text-2xl w-6">
-                    <button id="bars-button" class="md:hidden ">
+                    <button 
+                        aria-label="open-menu"
+                        id="bars-button" class="md:hidden ">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <button id="times-button" class="hidden md:hidden">
+                    <button 
+                        aria-label="close-menu"
+                        id="times-button" class="hidden md:hidden">
                         <i class="fa fa-times"></i>
                     </button>
                 </div>
