@@ -29,10 +29,22 @@ const toggleTheme = useToggle(isDark);
                         <a aria-label="home"
                             href="#home" class="nav-link hover:border-b-2 hover:border-dotted border-gray-950 dark:border-slate-50 selected">Home</a>
                     </li>
-                    <a href="#about" class="nav-link hover:border-b-2 hover:border-dotted border-gray-950 dark:border-slate-50">About</a>
-                    <a href="#portfolio" class="nav-link hover:border-b-2 hover:border-dotted border-gray-950 dark:border-slate-50">Portfolio</a>
-                    <a href="#skills" class="nav-link hover:border-b-2 hover:border-dotted border-gray-950 dark:border-slate-50">Skills</a>
-                    <a href="#contact" class="nav-link hover:border-b-2 hover:border-dotted border-gray-950 dark:border-slate-50">Contact</a>
+                    <li>
+                        <a aria-label="about"
+                            href="#about" class="nav-link hover:border-b-2 hover:border-dotted border-gray-950 dark:border-slate-50">About</a>
+                    </li>
+                    <li>
+                        <a aria-label="portfolio"
+                            href="#portfolio" class="nav-link hover:border-b-2 hover:border-dotted border-gray-950 dark:border-slate-50">Portfolio</a>
+                    </li>
+                    <li>
+                        <a aria-label="skills"
+                            href="#skills" class="nav-link hover:border-b-2 hover:border-dotted border-gray-950 dark:border-slate-50">Skills</a>
+                    </li>
+                    <li>
+                        <a aria-label="contact"
+                            href="#contact" class="nav-link hover:border-b-2 hover:border-dotted border-gray-950 dark:border-slate-50">Contact</a>
+                    </li>
                 </ul>
             </div>
             <div class="flex flex-row gap-4">
