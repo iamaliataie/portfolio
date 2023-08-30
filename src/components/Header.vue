@@ -16,7 +16,7 @@
                     </div>
               </div>
               <div class="hidden md:flex w-full h-60 sm:w-96 md:h-full md:w-2/6 lg:w-2/6 xl:w-5/12  p-2 md:p-0">
-                <img src="../assets/ataie.webp" alt="ataie" class="w-full h-full object-cover rounded-md">
+                <img fetchpriority="high" src="../assets/ataie.webp" alt="ataie" class="w-full h-full object-cover rounded-md">
               </div>
             </div>
             <div class="md:absolute bottom-6 left-0 flex flex-col space-y-2 md:flex-row items-center justify-between container">
