@@ -5,7 +5,7 @@ const year = new Date().getFullYear();
     <div class="bg-slate-100 text-gray-900 dark:bg-gray-950 dark:text-zinc-50 py-12">
         <div class="container flex flex-col items-center justify-center gap-8">
             <div class="flex flex-row space-x-2 items-center">
-                    <img src="../assets/favicon.svg" class="w-16" alt="logo">
+                    <img src="../assets/favicon.svg" class="w-16 h-full" alt="logo">
                     <div class="flex flex-col -space-y-2">
                         <span class="text-5xl text-main font-semibold">Ataie</span>
                         <span class="text-2xl font-semibold">Ali Ahmad</span>
