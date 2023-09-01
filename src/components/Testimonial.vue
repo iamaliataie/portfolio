@@ -23,32 +23,33 @@ const modules = [Pagination, Autoplay]
                 <h1 class="text-[30px] md:text-[40px] lg:text-[50px] font-bold">What My Colleagues Say</h1>
             </header>
             <swiper 
-        :slidesPerView="1"
-        :spaceBetween="10"
-        :autoplay="{
-            delay: 2500,
-            disableOnInteraction:false,
-            pauseOnMouseEnter:true
-        }"
-        :pagination="{
-            clickable: true,
-        }" 
-        :breakpoints="{
-            '640': {
-                slidesPerView: 2,
-                spaceBetween: 20,
-            },
-            '768': {
-                slidesPerView: 3,
-                spaceBetween: 30,
-            },
-            '1024': {
-                slidesPerView: 3,
-                spaceBetween: 40,
-            },
-        }" 
-        :modules="modules" 
-        class="mySwiper">
+                :slidesPerView="1"
+                :spaceBetween="10"
+                :autoplay="{
+                    delay: 2500,
+                    disableOnInteraction:false,
+                    pauseOnMouseEnter:true
+                }"
+                :pagination="{
+                    clickable: true,
+                }" 
+                :breakpoints="{
+                    '640': {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    '768': {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                    '1024': {
+                        slidesPerView: 3,
+                        spaceBetween: 40,
+                    },
+                }" 
+                :modules="modules" 
+                class="mySwiper"
+                >
             <swiper-slide>
                 <div class="flex flex-col items-center sm:items-start gap-6 p-6 bg-slate-50 rounded-md shadow-md text-slate-700 dark:bg-gray-900 dark:text-slate-300 dark:shadow-black text-sm">
                     <p class="text-center sm:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quas distinctio ipsum laudantium suscipit quisquam mollitia dolores iste ex nesciunt?Quidem quas distinctio ipsum laudantium suscipit quisquam mollitia dolores iste ex nesciunt?Quidem quas distinctio ipsum laudantium suscipit quisquam mollitia dolores iste ex nesciunt?</p>
