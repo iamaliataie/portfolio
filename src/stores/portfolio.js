@@ -27,7 +27,7 @@ export const usePortfolioStore = defineStore('portfolio', () => {
     }
 
     const getUser = async () => {
-        const { data } = await supabase.auth.getUser();
+        const { data, error } = await supabase.auth.getUser();
 
         if (data.user) {
             isLoggedIn.value = true;
