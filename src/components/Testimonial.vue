@@ -10,7 +10,7 @@ import '../../style.css';
 
 // import required modules
 import { Pagination, Autoplay } from 'swiper';
-
+    
 const modules = [Pagination, Autoplay]
 
 </script>
