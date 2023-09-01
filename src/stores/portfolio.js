@@ -8,7 +8,6 @@ export const usePortfolioStore = defineStore('portfolio', () => {
     const errorMessage = ref('');
 
     const handleLogin = async (credentials) => {
-
         errorMessage.value = '';
         const { email, password } = credentials;
 
