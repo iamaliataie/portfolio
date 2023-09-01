@@ -1,6 +1,9 @@
 <script setup>
+    
 const year = new Date().getFullYear();
+    
 </script>
+
 <template>
     <div class="bg-slate-100 text-gray-900 dark:bg-gray-950 dark:text-zinc-50 py-12">
         <div class="container flex flex-col items-center justify-center gap-8">
