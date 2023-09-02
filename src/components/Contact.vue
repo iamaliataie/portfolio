@@ -25,9 +25,10 @@ const message = reactive({
 const sendMessage = async () => {
     waiting.value = true
     messageReport.value = ''
-    if (!message.name || !message.email || !message.subject || !message.message) {
-        messageReport.value = 'name, email, subject and message fields are required.'
+    if (!message.name || !message.email || !message.message) {
+        messageReport.value = 'All fields are required.'
         success.value = false
+        waiting.value = false
         return
     }
     const {data, error} = await supabase.from('messages').insert(message)
@@ -69,15 +70,25 @@ const sendMessage = async () => {
                                 <p>hello@ataie.dev</p>
                             </div>
                         </div>
-                        <div class="">
-                            <form ref="form" @submit.prevent="sendMessage" class="flex flex-col space-y-2 lg:px-10">
-                                <input type="text" name="user_name" v-model="message.name" placeholder="Name" class="text-xl text-white w-full rounded-lg bg-sky-700/50 py-2 px-4 outline-none  placeholder:text-white/50">
-                                <input type="email" name="user_email" v-model="message.email" placeholder="Email" class="text-xl text-white w-full rounded-lg bg-sky-700/50 py-2 px-4 outline-none  placeholder:text-white/50">
-                                <textarea name="message" v-model="message.message" placeholder="Message" class="text-xl text-white w-full rounded-lg bg-sky-700/50 px-4 py-2 outline-none placeholder:text-white/50 resize-none" rows="4"></textarea>
-                                <button type="submit" class="px-4 py-2 rounded-md bg-sky-700 sm:w-fit text-white uppercase hover:bg-sky-800 ">Send message</button>
+                        <div class="lg:px-10">
+                            <form ref="form" @submit.prevent="sendMessage" class="flex flex-col space-y-2">
+                                <input type="text" name="user_name" v-model="message.name" placeholder="Name*" class="text-xl text-white w-full rounded-lg bg-sky-700/50 py-2 px-4 outline-none  placeholder:text-white/50">
+                                <input type="email" name="user_email" v-model="message.email" placeholder="Email*" class="text-xl text-white w-full rounded-lg bg-sky-700/50 py-2 px-4 outline-none  placeholder:text-white/50">
+                                <textarea name="message" v-model="message.message" placeholder="Message*" class="text-xl text-white w-full rounded-lg bg-sky-700/50 px-4 py-2 outline-none placeholder:text-white/50 resize-none" rows="4"></textarea>
+                                <button type="submit" class="px-4 py-2 rounded-md bg-sky-700 sm:w-fit text-white uppercase hover:bg-sky-800 ">
+                                    {{ waiting ? 'Sending. please wait' : 'Send message' }}
+                                </button>
                             </form>
-                            <div v-if="messageReport" class="text-white text-center">
-                                <span>{{ messageReport }}</span>
+                            <div 
+                            v-if="messageReport"
+                            class="text-white text-center md:text-start">
+                                <span>
+                                    <i 
+                                    class="fa fa-times"
+                                    :class="`fa fa-${success ? 'check':'times'}-circle ${success ? 'text-emerald-800' : 'text-red-800'}`"
+                                    ></i>
+                                    {{ messageReport }}
+                                </span>
                             </div>
                         </div>
                     </div>
