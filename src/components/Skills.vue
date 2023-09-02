@@ -1,44 +1,93 @@
 <template>
     <section id="skills" class="py-2">
-        <div class="section container border-b-2 dark:border-gray-900 xl:max-w-7xl w-11/12 px-0 py-20 space-y-8">
-            <header class="flex flex-col text-center">
-                <h1 class="uppercase text-main font-bold">Technology</h1>
-                <h2 class="text-[30px] md:text-[40px] lg:text-[50px] font-bold">Top Skills</h2>
-            </header>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-8">
-                <div v-motion-slide-visible-once-bottom class="flex flex-row items-center justify-center gap-2 sm:gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-8 rounded-lg">
-                    <img src="../assets/skills/python.png" alt="Python" class="filter invert w-6 h-6 sm:w-10 h-fit dark:filter-none">
-                    <span class="text-lg sm:text-2xl font-bold">Python</span>
+        <div class="section container py-32">
+            <div class="flex justify-center items-center">
+                <div>
+                    <p class="font-bold text-lg uppercase text-sky-700">Technologies</p>
+                    <h1 class="text-4xl sm:text-5xl font-bold mb-16">My Top Skills</h1>
                 </div>
-                <div v-motion-slide-visible-once-bottom class="flex flex-row items-center justify-center gap-2 sm:gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-8 rounded-lg">
-                    <img src="../assets/skills/django.png" alt="Python" class="filter invert w-6 h-6 sm:w-10 h-fit dark:filter-none">
-                    <span class="text-lg sm:text-2xl font-bold">Django</span>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-xl">
+                    <div class="col-span-1 p-6 sm:p-2">
+                        <img src="../assets/sk/python.png" alt="">
+                    </div>
+                    <div
+                        class="col-span-3 bg-sky-800 py-2 sm:p-0 sm:rounded-xl flex justify-center items-center w-full h-full">
+                        <p class="text-white text-xl sm:text-3xl md:text-2xl xl:text-3xl font-bold">Python</p>
+                    </div>
                 </div>
-                <div v-motion-slide-visible-once-bottom class="flex flex-row items-center justify-center gap-2 sm:gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-8 rounded-lg">
-                    <img src="../assets/skills/js.png" alt="Python" class="filter invert w-6 h-6 sm:w-10 h-fit dark:filter-none">
-                    <span class="text-lg sm:text-2xl font-bold">JavaScript</span>
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-xl">
+                    <div class="col-span-1 p-6 sm:p-2">
+                        <img src="../assets/sk/django.png" alt="">
+                    </div>
+                    <div
+                        class="col-span-3 bg-green-950 py-2 sm:p-0 sm:rounded-xl flex justify-center items-center w-full h-full">
+                        <p class="text-white text-xl sm:text-3xl md:text-2xl xl:text-3xl font-bold">Django</p>
+                    </div>
                 </div>
-                <div v-motion-slide-visible-once-bottom class="flex flex-row items-center justify-center gap-2 sm:gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-8 rounded-lg">
-                    <img src="../assets/skills/ts.png" alt="Python" class="filter invert w-6 h-6 sm:w-10 h-fit dark:filter-none">
-                    <span class="text-lg sm:text-2xl font-bold">TypeScript</span>
-                </div>       
-                <div v-motion-slide-visible-once-bottom class="flex flex-row items-center justify-center gap-2 sm:gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-8 rounded-lg">
-                    <img src="../assets/skills/vue.png" alt="Python" class="filter invert w-6 h-6 sm:w-10 h-fit dark:filter-none">
-                    <span class="text-lg sm:text-2xl font-bold">VueJS</span>
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-xl">
+                    <div class="col-span-1 p-6 sm:p-2">
+                        <img src="../assets/sk/js.png" alt="">
+                    </div>
+                    <div
+                        class="col-span-3 bg-yellow-300 py-2 sm:p-0 sm:rounded-xl flex justify-center items-center w-full h-full">
+                        <p class="text-xl sm:text-3xl md:text-2xl xl:text-3xl font-bold text-black">Javascript</p>
+                    </div>
                 </div>
-                <div v-motion-slide-visible-once-bottom class="flex flex-row items-center justify-center gap-2 sm:gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-8 rounded-lg">
-                    <img src="../assets/skills/tailwind.png" alt="Python" class="filter invert w-6 h-6 sm:w-10 h-fit dark:filter-none">
-                    <span class="text-lg sm:text-2xl font-bold">TailwindCSS</span>
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-xl">
+                    <div class="col-span-1 p-6 sm:p-2">
+                        <img src="../assets/sk/vue.png" alt="">
+                    </div>
+                    <div
+                        class="col-span-3 bg-emerald-500 py-2 sm:p-0 sm:rounded-xl flex justify-center items-center w-full h-full">
+                        <p class="text-white text-xl sm:text-3xl md:text-2xl xl:text-3xl font-bold">VueJS</p>
+                    </div>
                 </div>
-                <div v-motion-slide-visible-once-bottom class="flex flex-row items-center justify-center gap-2 sm:gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-8 rounded-lg">
-                    <img src="../assets/skills/supabase.png" alt="Python" class="filter invert w-6 h-6 sm:w-10 h-fit dark:filter-none">
-                    <span class="text-lg sm:text-2xl font-bold">Supabase</span>
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-xl">
+                    <div class="col-span-1 p-6 sm:p-2">
+                        <img src="../assets/sk/tailwind.png" alt="">
+                    </div>
+                    <div
+                        class="col-span-3 bg-sky-400 py-2 sm:p-0 sm:rounded-xl flex justify-center items-center w-full h-full">
+                        <p class="text-white text-xl sm:text-3xl md:text-2xl xl:text-3xl font-bold">Tailwind</p>
+                    </div>
                 </div>
-                <div v-motion-slide-visible-once-bottom class="flex flex-row items-center justify-center gap-2 sm:gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-8 rounded-lg">
-                    <img src="../assets/skills/bootstrap.png" alt="Python" class="filter invert w-6 h-6 sm:w-10 h-fit dark:filter-none">
-                    <span class="text-lg sm:text-2xl font-bold">Bootstrap</span>
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-xl">
+                    <div class="col-span-1 p-6 sm:p-2">
+                        <img src="../assets/sk/bootstrap.png" alt="">
+                    </div>
+                    <div
+                        class="col-span-3 bg-purple-900 py-2 sm:p-0 sm:rounded-xl flex justify-center items-center w-full h-full">
+                        <p class="text-white text-xl sm:text-3xl md:text-2xl xl:text-3xl font-bold">Bootstrap</p>
+                    </div>
+                </div>
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-xl">
+                    <div class="col-span-1 p-6 sm:p-2">
+                        <img src="../assets/sk/supabase.png" alt="">
+                    </div>
+                    <div
+                        class="col-span-3 bg-emerald-500 py-2 sm:p-0 sm:rounded-xl flex justify-center items-center w-full h-full">
+                        <p class="text-white text-xl sm:text-3xl md:text-2xl xl:text-3xl font-bold">Supabase</p>
+                    </div>
+            </div>
+            <div
+                class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-xl">
+                <div class="col-span-1 p-6 sm:p-2">
+                    <img src="../assets/sk/postgres.png" alt="">
+                </div>
+                <div
+                    class="col-span-3 bg-cyan-700 py-2 sm:p-0  sm:rounded-xl flex justify-center items-center w-full h-full">
+                    <p class="text-white text-xl sm:text-3xl md:text-2xl xl:text-3xl font-bold">PostgreSQL</p>
                 </div>
             </div>
         </div>
-    </section>
-</template>
+    </div>
+</section></template>
