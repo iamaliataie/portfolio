@@ -43,7 +43,7 @@ onMounted(() => {
     <div>
         <Navbar />
         <Header />
-        <About :about="aboutData"/>
+        <!-- <About :about="aboutData"/> -->
         <Works :works="worksList" :loading="loading"/>
         <Skills />
         <Contact :contact="contactData" :loading="loading"/>

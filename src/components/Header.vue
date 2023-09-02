@@ -19,10 +19,13 @@
                             languages, responsive frameworks, databases, and best code practices.
                         </p>
                     </div>
-                    <div class="text-center md:text-start w-full">
-                        <a href="#"
+                    <div class="text-center md:text-start w-full flex items-center space-x-4 justify-center md:justify-start">
+                        <a href="#contact"
                             class="uppercase p-3 text-sm sm:text-md lg:text-lg sm:p-4 md:p-3 lg:px-6 lg:py-4 rounded-md bg-sky-600 text-white font-bold">talk
                             with me</a>
+                        <a href="/CV-AliAhmadAtaie.pdf" target="_blank"
+                            class="uppercase p-3 text-sm sm:text-md lg:text-lg sm:p-4 md:p-3 lg:px-6 lg:py-4 rounded-md bg-sky-600 text-white font-bold">
+                            My resume</a>
                 </div>
             </div>
             <div class="hidden md:flex justify-center items-center">
