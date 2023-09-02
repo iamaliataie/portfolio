@@ -18,7 +18,7 @@ const message = reactive({
     name: '',
     phone: '',
     email: '',
-    subject: '',
+    subject: 'new things',
     message: ''
 })
 
@@ -57,81 +57,31 @@ const sendMessage = async () => {
 </script>
 
 <template>
-    <section id="contact" class="py-2">
-        <div class="section container border-b-2 dark:border-gray-900 xl:max-w-7xl w-11/12 px-0 py-20 space-y-8">
-            <header class="flex flex-col text-center">
-                <h1 class="uppercase text-main font-bold">Contact</h1>
-                <h2 class="text-[30px] md:text-[40px] lg:text-[50px] font-bold">Contact With Me</h2>
-            </header>
-            <div class="flex flex-col md:flex-row items-left justify-left gap-8">
-                <div class="md:w-4/12 flex flex-col sm:grid sm:grid-cols-2 md:flex gap-4">
-                    <div class="flex justify-center sm:flex-col items-center gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-7 rounded-lg">
-                        <i class="fa fa-map text-main text-3xl"></i>
-                        <span v-if="!loading" class="xl:text-lg">{{ contact.address }}</span>
-                        <div v-else class="h-[16px] w-3/6 animate-pulse bg-slate-300 dark:bg-slate-700 rounded-md"></div>
-                    </div>
-                    <div class="flex justify-center sm:flex-col items-center gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-7 rounded-lg">
-                        <i class="fa fa-phone text-main text-3xl"></i>
-                        <a v-if="!loading" :href="`tel:${String(contact.phone).replaceAll('-','')}`" class="xl:text-lg">{{ contact.phone }}</a>
-                        <div v-else class="h-[16px] w-3/6 animate-pulse bg-slate-300 dark:bg-slate-700 rounded-md"></div>
-                    </div>
-                    <div class="flex justify-center sm:flex-col items-center gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-7 rounded-lg">
-                        <i class="fa fa-envelope text-main text-3xl"></i>
-                        <a v-if="!loading" :href="`mailto:${contact.email}`" class="xl:text-lg">{{ contact.email }}</a>
-                        <div v-else class="h-[16px] w-3/6 animate-pulse bg-slate-300 dark:bg-slate-700 rounded-md"></div>
-                    </div>
-                    <div class="flex justify-center sm:flex-col items-center gap-4 shadow-md bg-slate-50 shadow-slate-300 dark:shadow-black dark:bg-slate-900 py-7 rounded-lg">
-                        <i class="fa fa-check-circle text-main text-3xl"></i>
-                        <span class="xl:text-lg">Freelance Available</span>
-                    </div>
-                </div>
-                <div class="md:w-8/12 rounded-lg bg-slate-50 dark:bg-gray-900 dark:shadow-black shadow-lg p-6 sm:p-12 md:p-6 lg:p-12 xl:text-lg">
-                    <form ref="form" @submit.prevent="sendMessage" class="space-y-6 sm:space-y-8">
-                        <div class="flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-4 lg:gap-8">
-                            <input
-                            v-model="message.name"
-                            name="user_name"
-                            type="text" class="py-3 px-5 rounded-md bg-slate-200 dark:bg-gray-950 w-full focus:outline-none" placeholder="Enter your name" required>
-                            <input
-                            v-model="message.phone"
-                            name="user_phone"
-                            type="text" class="py-3 px-5 rounded-md bg-slate-200 dark:bg-gray-950 w-full focus:outline-none" placeholder="Enter your phone (optional)">
+        <section id="contact" class="py-2 bg-sky-600">
+            <div class="section container py-32">
+                <div class="flex flex-col justify-center items-center">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+                        <div class="lg:px-10 flex flex-col space-y-6 text-white">
+                            <h1 class="text-4xl sm:text-4xl font-bold text-white">Just Say Hi.</h1>
+                            <p class="text-3xl">I'm always open to discuss your project and talk about new things.</p>
+                            <div class="text-lg font-semibold">
+                                <p>Mail me at:</p>
+                                <p>hello@ataie.dev</p>
+                            </div>
                         </div>
-                        <div class="flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-4 lg:gap-8">
-                            <input
-                            v-model="message.email"
-                            name="user_email"
-                            type="email" class="py-3 px-5 rounded-md bg-slate-200 dark:bg-gray-950 w-full focus:outline-none" placeholder="Enter your email" required>
-                            <input
-                            v-model="message.subject"
-                            name="subject"
-                            type="text" class="py-3 px-5 rounded-md bg-slate-200 dark:bg-gray-950 w-full focus:outline-none" placeholder="Enter your subject" required>
+                        <div class="">
+                            <form ref="form" @submit.prevent="sendMessage" class="flex flex-col space-y-2 lg:px-10">
+                                <input type="text" name="user_name" v-model="message.name" placeholder="Name" class="text-xl text-white w-full rounded-lg bg-sky-700/50 py-2 px-4 outline-none  placeholder:text-white/50">
+                                <input type="email" name="user_email" v-model="message.email" placeholder="Email" class="text-xl text-white w-full rounded-lg bg-sky-700/50 py-2 px-4 outline-none  placeholder:text-white/50">
+                                <textarea name="message" v-model="message.message" placeholder="Message" class="text-xl text-white w-full rounded-lg bg-sky-700/50 px-4 py-2 outline-none placeholder:text-white/50 resize-none" rows="4"></textarea>
+                                <button type="submit" class="px-4 py-2 rounded-md bg-sky-700 sm:w-fit text-white uppercase hover:bg-sky-800 ">Send message</button>
+                            </form>
+                            <div v-if="messageReport" class="text-white text-center">
+                                <span>{{ messageReport }}</span>
+                            </div>
                         </div>
-                        <div class="flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-4 lg:gap-8">
-                            <textarea
-                            v-model="message.message"
-                            name="message"
-                            cols="30" rows="7" class="py-3 px-5 rounded-md bg-slate-200 dark:bg-gray-950 w-full focus:outline-none resize-none" placeholder="Type your message" required></textarea>
-                        </div>
-                        <div class="flex justify-center">
-                            <button
-                            type="submit"
-                            class="w-full sm:w-2/4 bg-slate-200 hover:bg-slate-300 dark:bg-gray-950 dark:hover:bg-gray-950/60 py-3 rounded-md"
-                            >
-                                <span v-if="!waiting">Send Message <i class="far fa-paper-plane ml-2"></i></span>
-                                <span v-else>Sending message...</span>
-                            </button>
-                        </div>
-                    </form>
-                    <div
-                    v-if="messageReport"
-                    class="text-center mt-2 space-x-2">
-                        <i v-if="!success" class="fa fa-times-circle" :class="{'text-red-500': !success}"></i>
-                        <i v-else class="fa fa-check-circle" :class="{'text-green-500': success}"></i>
-                        <span>{{ messageReport }}</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 </template>
