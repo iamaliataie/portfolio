@@ -10,9 +10,9 @@ const year = new Date().getFullYear();
             </div>
             <div class="flex flex-col space-y-4">
                 <div class="flex items-center space-x-6 justify-center">
-                    <a href="#"><i class="fa-brands fa-github text-sky-600 text-4xl"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin text-sky-600 text-4xl"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram text-sky-600 text-4xl"></i></a>
+                    <a href="https://github.com/iamaliataie" target="_blank"><i class="fa-brands fa-github text-sky-600 text-4xl"></i></a>
+                    <a href="https://linkedin.com/in/iamaliataie" target="_blank"><i class="fa-brands fa-linkedin text-sky-600 text-4xl"></i></a>
+                    <a href="https://instagram.com/iamaliataie" target="_blank"><i class="fa-brands fa-instagram text-sky-600 text-4xl"></i></a>
                 </div>
                 <div class="text-center">
                     <span class="text-slate-400 text-sm">&copy; 2023. All Rights Reserved</span>
