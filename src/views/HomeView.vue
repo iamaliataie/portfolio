@@ -31,9 +31,9 @@ const fetchData = async () => {
 }
 
 onMounted(() => {
-    let navbarScript = document.createElement('script');
-    navbarScript.setAttribute('src', 'custom.js');
-    document.head.appendChild(navbarScript);
+    // let navbarScript = document.createElement('script');
+    // navbarScript.setAttribute('src', 'custom.js');
+    // document.head.appendChild(navbarScript);
     fetchData();
 })
 
