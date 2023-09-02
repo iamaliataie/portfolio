@@ -23,24 +23,24 @@ export default defineConfig({
         icons: [
           {
             src: 'logo.png',
-            sizes: '192x192',
+            sizes: '48x48',
             type: 'image/png'
           },
-          {
-            src: 'logo.png',
-            sizes: '256x256',
-            type: 'image/png'
-          },
-          {
-            src: 'logo.png',
-            sizes: '384x384',
-            type: 'image/png'
-          },
-          {
-            src: 'logo.png',
-            sizes: '512x512',
-            type: 'image/png'
-          },
+          // {
+          //   src: 'logo.png',
+          //   sizes: '256x256',
+          //   type: 'image/png'
+          // },
+          // {
+          //   src: 'logo.png',
+          //   sizes: '384x384',
+          //   type: 'image/png'
+          // },
+          // {
+          //   src: 'logo.png',
+          //   sizes: '512x512',
+          //   type: 'image/png'
+          // },
         ]
       }
     })
