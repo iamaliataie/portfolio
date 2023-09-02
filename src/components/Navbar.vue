@@ -20,16 +20,16 @@ const openMenu = ref(false)
             <ul class="absolute top-[80px] left-0 right-0 h-screen space-y-10 text-xl p-10 transition-transform duration-300 ease-in-out md:text-lg md:space-y-0 md:p-0 md:text-md md:static md:h-auto bg-slate-50 dark:bg-slate-950 flex-col flex md:flex-row md:translate-x-0 items-center md:space-x-10 uppercase font-semibold"
                 :class="openMenu ? 'translate-x-0' : 'translate-x-full'">
                 <li class="w-full">
-                    <a href="#home" class="">Home</a>
+                    <a @click="openMenu = false" href="#home" class="">Home</a>
                 </li>
                 <li class="w-full">
-                    <a href="#portfolio" class="">Portfolio</a>
+                    <a @click="openMenu = false" href="#portfolio" class="">Portfolio</a>
                 </li>
                 <li class="w-full">
-                    <a href="#skills" class="">Skills</a>
+                    <a @click="openMenu = false" href="#skills" class="">Skills</a>
                 </li>
                 <li class="w-full">
-                    <a href="#contact" class="bg-sky-600 px-3 py-2 text-white rounded-md">Contact</a>
+                    <a @click="openMenu = false" href="#contact" class="bg-sky-600 px-3 py-2 text-white rounded-md">Contact</a>
                 </li>
                 <li class="md:hidden">
                     <div class="flex flex-col space-y-4">
