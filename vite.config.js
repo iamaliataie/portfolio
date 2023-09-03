@@ -9,6 +9,9 @@ export default defineConfig({
     vue(),
     VitePWA({
       registerType: 'autoUpdate',
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,ico,png,svg,pdf}']
+      },
       manifest: {
         name: "Ataie Portfolio",
         short_name: "Portfolio",
