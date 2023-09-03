@@ -11,7 +11,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       workbox: {
         cleanupOutdatedCaches: true,
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,pdf}']
+        skipWaiting: true,
+        globPatterns: ['**/*.{js,css,html,ico,png,svg,jpg,jpeg,pdf}']
       },
       manifest: {
         name: "Ataie Portfolio",
