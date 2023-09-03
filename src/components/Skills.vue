@@ -7,85 +7,85 @@
                     <h1 class="text-4xl sm:text-5xl font-bold mb-16">My Top Skills</h1>
                 </div>
             </div>
-            <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
                 <div
-                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-xl">
-                    <div class="col-span-1 p-6 sm:p-2">
+                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl">
+                    <div class="col-span-1 p-4 sm:p-2">
                         <img src="../assets/sk/python.png" alt="">
                     </div>
                     <div
                         class="col-span-3 bg-sky-800 py-2 sm:p-0 sm:rounded-xl flex justify-center items-center w-full h-full">
-                        <p class="text-white text-xl sm:text-3xl md:text-2xl xl:text-3xl font-bold">Python</p>
+                        <p class="text-white sm:text-3xl md:text-2xl xl:text-3xl font-bold">Python</p>
                     </div>
                 </div>
                 <div
-                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-xl">
-                    <div class="col-span-1 p-6 sm:p-2">
+                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl">
+                    <div class="col-span-1 p-4 sm:p-2">
                         <img src="../assets/sk/django.png" alt="">
                     </div>
                     <div
                         class="col-span-3 bg-green-950 py-2 sm:p-0 sm:rounded-xl flex justify-center items-center w-full h-full">
-                        <p class="text-white text-xl sm:text-3xl md:text-2xl xl:text-3xl font-bold">Django</p>
+                        <p class="text-white sm:text-3xl md:text-2xl xl:text-3xl font-bold">Django</p>
                     </div>
                 </div>
                 <div
-                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-xl">
-                    <div class="col-span-1 p-6 sm:p-2">
+                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl">
+                    <div class="col-span-1 p-4 sm:p-2">
                         <img src="../assets/sk/js.png" alt="">
                     </div>
                     <div
                         class="col-span-3 bg-yellow-300 py-2 sm:p-0 sm:rounded-xl flex justify-center items-center w-full h-full">
-                        <p class="text-xl sm:text-3xl md:text-2xl xl:text-3xl font-bold text-black">Javascript</p>
+                        <p class="sm:text-3xl md:text-2xl xl:text-3xl font-bold text-black">Javascript</p>
                     </div>
                 </div>
                 <div
-                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-xl">
-                    <div class="col-span-1 p-6 sm:p-2">
+                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl">
+                    <div class="col-span-1 p-4 sm:p-2">
                         <img src="../assets/sk/vue.png" alt="">
                     </div>
                     <div
                         class="col-span-3 bg-emerald-500 py-2 sm:p-0 sm:rounded-xl flex justify-center items-center w-full h-full">
-                        <p class="text-white text-xl sm:text-3xl md:text-2xl xl:text-3xl font-bold">VueJS</p>
+                        <p class="text-white sm:text-3xl md:text-2xl xl:text-3xl font-bold">VueJS</p>
                     </div>
                 </div>
                 <div
-                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-xl">
-                    <div class="col-span-1 p-6 sm:p-2">
+                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl">
+                    <div class="col-span-1 p-4 sm:p-2">
                         <img src="../assets/sk/tailwind.png" alt="">
                     </div>
                     <div
                         class="col-span-3 bg-sky-400 py-2 sm:p-0 sm:rounded-xl flex justify-center items-center w-full h-full">
-                        <p class="text-white text-xl sm:text-3xl md:text-2xl xl:text-3xl font-bold">Tailwind</p>
+                        <p class="text-white sm:text-3xl md:text-2xl xl:text-3xl font-bold">TailwindCSS</p>
                     </div>
                 </div>
                 <div
-                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-xl">
-                    <div class="col-span-1 p-6 sm:p-2">
+                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl">
+                    <div class="col-span-1 p-4 sm:p-2">
                         <img src="../assets/sk/bootstrap.png" alt="">
                     </div>
                     <div
                         class="col-span-3 bg-purple-900 py-2 sm:p-0 sm:rounded-xl flex justify-center items-center w-full h-full">
-                        <p class="text-white text-xl sm:text-3xl md:text-2xl xl:text-3xl font-bold">Bootstrap</p>
+                        <p class="text-white sm:text-3xl md:text-2xl xl:text-3xl font-bold">Bootstrap</p>
                     </div>
                 </div>
                 <div
-                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-xl">
-                    <div class="col-span-1 p-6 sm:p-2">
+                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl">
+                    <div class="col-span-1 p-4 sm:p-2">
                         <img src="../assets/sk/supabase.png" alt="">
                     </div>
                     <div
                         class="col-span-3 bg-emerald-500 py-2 sm:p-0 sm:rounded-xl flex justify-center items-center w-full h-full">
-                        <p class="text-white text-xl sm:text-3xl md:text-2xl xl:text-3xl font-bold">Supabase</p>
+                        <p class="text-white sm:text-3xl md:text-2xl xl:text-3xl font-bold">Supabase</p>
                     </div>
             </div>
             <div
-                class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-xl">
-                <div class="col-span-1 p-6 sm:p-2">
+                class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl">
+                <div class="col-span-1 p-4 sm:p-2">
                     <img src="../assets/sk/postgres.png" alt="">
                 </div>
                 <div
                     class="col-span-3 bg-cyan-700 py-2 sm:p-0  sm:rounded-xl flex justify-center items-center w-full h-full">
-                    <p class="text-white text-xl sm:text-3xl md:text-2xl xl:text-3xl font-bold">PostgreSQL</p>
+                    <p class="text-white sm:text-3xl md:text-2xl xl:text-3xl font-bold">PostgreSQL</p>
                 </div>
             </div>
         </div>
