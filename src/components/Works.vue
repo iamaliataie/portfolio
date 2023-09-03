@@ -25,7 +25,7 @@ const props = defineProps(['loading', 'works'])
                     >
                         <div class="text-start w-full">
                             <h1
-                                class="text-2xl sm:text-4xl md:text-[25px] lg:text-4xl xl:text-[40px] font-bold text-slate-900 dark:text-slate-300">
+                                class="text-[22px] sm:text-4xl md:text-[25px] lg:text-[34px] xl:text-[38px] font-bold text-slate-900 dark:text-slate-300">
                                 {{ work.title }}</h1>
                             <p class="sm:text-xl md:text-lg lg:text-xl mt-4 text-justify">{{ work.description }}</p>
                         </div>
