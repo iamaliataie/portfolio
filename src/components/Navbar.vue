@@ -12,7 +12,7 @@ const openMenu = ref(false)
     <header class="py-3 fixed top-0 left-0  w-full z-20 h-[80px] bg-slate-50 dark:bg-slate-950">
         <div class="container flex items-center justify-between">
             <div class="flex flex-row space-x-2 items-center justify-start">
-                <img src="../assets/a48-3.svg" class="h-full animate-spin-slow" alt="">
+                <img src="../assets/a48-3.svg" class="h-full" alt="">
             </div>
             <button @click="openMenu = !openMenu" class="md:hidden text-2xl">
                 <i class="fa fa-bars"></i>
