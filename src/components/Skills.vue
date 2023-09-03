@@ -9,7 +9,7 @@
             </div>
             <div class="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
                 <div
-                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl">
+                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl dark:border dark:border-slate-700">
                     <div class="col-span-1 p-4 sm:p-2">
                         <img src="../assets/sk/python.png" alt="">
                     </div>
@@ -19,7 +19,7 @@
                     </div>
                 </div>
                 <div
-                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl">
+                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl dark:border dark:border-slate-700">
                     <div class="col-span-1 p-4 sm:p-2">
                         <img src="../assets/sk/django.png" alt="">
                     </div>
@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <div
-                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl">
+                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl dark:border dark:border-slate-700">
                     <div class="col-span-1 p-4 sm:p-2">
                         <img src="../assets/sk/js.png" alt="">
                     </div>
@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <div
-                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl">
+                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl dark:border dark:border-slate-700">
                     <div class="col-span-1 p-4 sm:p-2">
                         <img src="../assets/sk/vue.png" alt="">
                     </div>
@@ -49,7 +49,7 @@
                     </div>
                 </div>
                 <div
-                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl">
+                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl dark:border dark:border-slate-700">
                     <div class="col-span-1 p-4 sm:p-2">
                         <img src="../assets/sk/tailwind.png" alt="">
                     </div>
@@ -59,7 +59,7 @@
                     </div>
                 </div>
                 <div
-                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl">
+                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl dark:border dark:border-slate-700">
                     <div class="col-span-1 p-4 sm:p-2">
                         <img src="../assets/sk/bootstrap.png" alt="">
                     </div>
@@ -69,7 +69,7 @@
                     </div>
                 </div>
                 <div
-                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl">
+                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl dark:border dark:border-slate-700">
                     <div class="col-span-1 p-4 sm:p-2">
                         <img src="../assets/sk/supabase.png" alt="">
                     </div>
@@ -79,7 +79,7 @@
                     </div>
             </div>
             <div
-                class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl">
+                class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl dark:border dark:border-slate-700">
                 <div class="col-span-1 p-4 sm:p-2">
                     <img src="../assets/sk/postgres.png" alt="">
                 </div>
