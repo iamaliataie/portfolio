@@ -1,5 +1,5 @@
 <template>
-    <section id="home" class="min-h-screen md:h-auto pt-[80px]">
+    <section id="home" class="h-auto pt-[80px]">
         <div class="section container h-full py-10 md:py-24">
             <div
                 class="grid grid-cols-1 md:grid-cols-2 md:rounded-3xl h-full xl:min-h-[600px] overflow-hidden space-y-10 md:shadow-xl md:space-y-0 md:bg-white md:dark:bg-slate-900 z-50">
