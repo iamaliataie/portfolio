@@ -67,7 +67,7 @@ const sendMessage = async () => {
                             <p class="text-3xl">I'm always open to discuss your project and talk about new things.</p>
                             <div class="text-lg font-semibold">
                                 <p>Mail me at:</p>
-                                <p>hello@ataie.dev</p>
+                                <a href="mailto:hello@ataie.dev">hello@ataie.dev</a>
                             </div>
                         </div>
                         <div class="lg:px-10">
