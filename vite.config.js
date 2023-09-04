@@ -12,7 +12,23 @@ export default defineConfig({
       workbox: {
         cleanupOutdatedCaches: true,
         skipWaiting: true,
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,jpg,jpeg,pdf}']
+        globPatterns: ['**/*.{js,css,html,ico,png,svg,jpg,jpeg,pdf}'],
+        runtimeCaching: [
+          {
+            urlPattern: /^https:\/\/fasxyiajvwstushdwzxo\.supabase\.co\/.*/i,
+            handler: 'NetworkFirst',
+            options: {
+              cacheName: 'supabase-cache',
+              expiration: {
+                maxEntries: 10,
+                maxAgeSeconds: 60 * 60 * 24 * 365 // <== 365 days
+              },
+              cacheableResponse: {
+                statuses: [0, 200]
+              }
+            }
+          },
+        ]
       },
       manifest: {
         name: "Ali Ahmad Ataie",
