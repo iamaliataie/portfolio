@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [
     vue(),
     VitePWA({
-      registerType: 'prompt',
+      // registerType: 'prompt',
       workbox: {
         cleanupOutdatedCaches: true,
         skipWaiting: true,
