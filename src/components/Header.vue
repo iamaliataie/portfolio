@@ -2,9 +2,9 @@
     <section id="home" class="h-auto pt-[80px]">
         <div class="section container h-full py-10 md:py-24">
             <div
-                class="grid grid-cols-1 md:grid-cols-2 md:rounded-3xl h-full xl:min-h-[600px] overflow-hidden space-y-10 md:shadow-xl md:space-y-0 md:bg-white md:dark:bg-slate-900 z-50">
+                class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 md:rounded-3xl h-full overflow-hidden space-y-10 md:shadow-xl md:space-y-0 md:bg-white md:dark:bg-slate-900 z-50">
                 <div
-                    class="flex flex-col justify-center items-center space-y-12 px-6 sm:px-20 sm:py-10 md:px-8 lg:px-14 lx:px-20">
+                    class="xl:col-span-3 flex flex-col justify-center items-center space-y-12 px-6 sm:px-20 sm:py-10 md:px-8 lg:px-14 xl:px-28">
                     <div class="text-center md:text-start w-full">
                         <p
                             class="text-lg sm:text-3xl md:text-xl lg:text-2xl font-bold mb-2 text-slate-800 dark:text-slate-100">
@@ -28,7 +28,7 @@
                             My resume</a>
                 </div>
             </div>
-            <div class="md:flex justify-center items-center px-6 sm:px-20 md:p-0">
+            <div class="xl:col-span-2 md:flex justify-center items-center px-6 sm:px-20 md:p-0">
                 <img src="../assets/ataie.jpg" alt="image" class=" w-full h-full">
             </div>
         </div>
