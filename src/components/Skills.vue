@@ -95,7 +95,7 @@
                     </div>
                     <div
                         class="col-span-3 bg-[#470137] py-2 sm:p-0  sm:rounded-xl flex justify-center items-center w-full h-full">
-                        <p class="text-white sm:text-3xl md:text-2xl xl:text-3xl font-bold">PostgreSQL</p>
+                        <p class="text-white sm:text-3xl md:text-2xl xl:text-3xl font-bold">Adobe Xd</p>
                     </div>
                 </div>
             </div>
