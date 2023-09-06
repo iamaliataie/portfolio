@@ -9,14 +9,14 @@ const openMenu = ref(false)
 
 </script>
 <template>
-    <header class="py-3 fixed top-0 left-0  w-full z-20 h-[80px] bg-slate-50 dark:bg-slate-950">
+    <header class="py-3 fixed top-0 left-0  w-full z-20  bg-slate-50 dark:bg-slate-950">
         <div class="container flex items-center justify-between">
             <div class="flex flex-row space-x-2 items-center justify-start">
-                <img src="../assets/logo.svg" class="h-full animate-spin-slow" alt="">
+                <img src="../assets/logo.svg" class="w-10 animate-spin-slow" alt="">
             </div>
 
-            <div class="flex items-center items-center space-x-6">
-                <ul class="absolute top-[80px] left-0 right-0 h-screen space-y-10 text-xl p-10 transition-transform duration-300 ease-in-out md:text-lg md:space-y-0 md:p-0 md:text-md md:static md:h-auto bg-slate-50 dark:bg-slate-950 flex-col flex md:flex-row md:translate-x-0 items-center md:space-x-10 font-semibold"
+            <div class="flex items-center space-x-3 md:space-x-6">
+                <ul class="absolute top-[60px] left-0 right-0 h-screen space-y-10 text-xl p-10 transition-transform duration-300 ease-in-out md:text-lg md:space-y-0 md:p-0 md:text-md md:static md:h-auto bg-slate-50 dark:bg-slate-950 flex-col flex md:flex-row md:translate-x-0 items-center md:space-x-10 font-semibold"
                 :class="openMenu ? 'translate-x-0' : 'translate-x-full'">
                     <li class="w-full">
                         <a @click="openMenu = false" href="#home" class="">Home</a>
@@ -45,17 +45,22 @@ const openMenu = ref(false)
                 </ul>
 
                 <div>
-                    <button @click="toggleTheme()" v-if="isDark" class="text-2xl md:text-lg">
+                    <button @click="toggleTheme()" v-if="isDark" class="text-xl md:text-lg">
                         <i class="fa fa-moon "></i>
                     </button>
-                    <button @click="toggleTheme()" v-else class="text-2xl md:text-lg">
+                    <button @click="toggleTheme()" v-else class="text-xl md:text-lg">
                         <i class="fa fa-sun "></i>
                     </button>
                 </div>
 
-                <button @click="openMenu = !openMenu" class="md:hidden text-2xl">
-                    <i class="fa fa-bars"></i>
-                </button>
+                <div class="md:hidden">
+                    <button v-if="openMenu" @click="openMenu = !openMenu" class="text-2xl w-5">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    <button v-else @click="openMenu = !openMenu" class="text-xl w-5">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
 
             </div>
         </div>
