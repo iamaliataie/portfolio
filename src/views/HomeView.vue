@@ -19,7 +19,7 @@ const fetchData = async () => {
     loading.value = true;
 
     const { data: about } = await supabase.from('about').select().single()
-    const { data: works } = await supabase.from('works').select()
+    const { data: works } = await supabase.from('works').select().order('index')
     const { data: contact } = await supabase.from('contact').select().single()
 
     aboutData.value = about;
