@@ -18,7 +18,7 @@ const props = defineProps(['loading', 'works'])
             <div class="flex flex-col space-y-10">
                 <div
                     v-for="(work, index) in works"
-                    class="grid grid-cols-1 md:grid-cols-2 xl:min-h-[600px] rounded-3xl overflow-hidden shadow-2xl bg-white dark:bg-slate-950">
+                    class="grid grid-cols-1 md:grid-cols-2 rounded-3xl overflow-hidden shadow-2xl bg-white dark:bg-slate-950">
                     <div 
                     class="flex flex-col justify-center items-center space-y-12 p-8 sm:px-14 md:px-8 lg:px-10 xl:p-20"
                     :class="(index%2 == 0) ? 'order-2 md:order-1' : 'order-2'"
