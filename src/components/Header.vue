@@ -1,6 +1,6 @@
 <template>
     <section id="home" class="h-auto pt-[80px]">
-        <div class="section container h-full py-10 md:py-24">
+        <div class="section container h-full py-10 md:pt-24 md md:pb-32">
             <div
                 class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 md:rounded-3xl h-full overflow-hidden space-y-10 md:shadow-xl md:space-y-0 md:bg-white md:dark:bg-slate-900 z-50">
                 <div
