@@ -77,17 +77,28 @@
                         class="col-span-3 bg-emerald-500 py-2 sm:p-0 sm:rounded-xl flex justify-center items-center w-full h-full">
                         <p class="text-white sm:text-3xl md:text-2xl xl:text-3xl font-bold">Supabase</p>
                     </div>
-            </div>
-            <div
-                class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl dark:border dark:border-slate-700">
-                <div class="col-span-1 p-4 sm:p-2">
-                    <img src="../assets/sk/postgres.png" alt="">
                 </div>
                 <div
-                    class="col-span-3 bg-cyan-700 py-2 sm:p-0  sm:rounded-xl flex justify-center items-center w-full h-full">
-                    <p class="text-white sm:text-3xl md:text-2xl xl:text-3xl font-bold">PostgreSQL</p>
+                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl dark:border dark:border-slate-700">
+                    <div class="col-span-1 p-4 sm:p-2">
+                        <img src="../assets/sk/postgres.png" alt="">
+                    </div>
+                    <div
+                        class="col-span-3 bg-cyan-700 py-2 sm:p-0  sm:rounded-xl flex justify-center items-center w-full h-full">
+                        <p class="text-white sm:text-3xl md:text-2xl xl:text-3xl font-bold">PostgreSQL</p>
+                    </div>
+                </div>
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl dark:border dark:border-slate-700">
+                    <div class="col-span-1 p-4 sm:p-2">
+                        <img src="../assets/sk/xd.png" alt="">
+                    </div>
+                    <div
+                        class="col-span-3 bg-[#470137] py-2 sm:p-0  sm:rounded-xl flex justify-center items-center w-full h-full">
+                        <p class="text-white sm:text-3xl md:text-2xl xl:text-3xl font-bold">PostgreSQL</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section></template>
+    </section>
+</template>
