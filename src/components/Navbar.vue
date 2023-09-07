@@ -45,10 +45,10 @@ const openMenu = ref(false)
                 </ul>
 
                 <div>
-                    <button @click="toggleTheme()" v-if="isDark" class="text-xl md:text-lg">
+                    <button aria-label="them-button-moon" @click="toggleTheme()" v-if="isDark" class="text-xl md:text-lg">
                         <i class="fa fa-moon "></i>
                     </button>
-                    <button @click="toggleTheme()" v-else class="text-xl md:text-lg">
+                    <button aria-label="them-button-sun" @click="toggleTheme()" v-else class="text-xl md:text-lg">
                         <i class="fa fa-sun "></i>
                     </button>
                 </div>
