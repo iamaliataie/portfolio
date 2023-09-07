@@ -31,9 +31,9 @@ const props = defineProps(['loading', 'works'])
                         </div>
                         <div class="text-start w-full flex items-center space-x-4">
                             <a :href="`https://${work.demo}`" aria-label="demo"
-                                class="flex-1 sm:flex-none text-center uppercase p-2 sm:px-6 sm:py-4 rounded-md bg-sky-600 text-white font-semibold">demo</a>
+                                class="flex-1 sm:flex-none text-center uppercase p-2 sm:px-6 sm:py-4 rounded-md bg-sky-700 text-white font-semibold">demo</a>
                             <a :href="`https://${work.github}`" aria-label="source"
-                                class="flex-1 sm:flex-none text-center uppercase p-2 sm:px-6 sm:py-4 rounded-md bg-sky-600 text-white font-semibold">source</a>
+                                class="flex-1 sm:flex-none text-center uppercase p-2 sm:px-6 sm:py-4 rounded-md bg-sky-700 text-white font-semibold">source</a>
                         </div>
                     </div>
                     <div class="h-full w-full"
