@@ -54,10 +54,10 @@ const openMenu = ref(false)
                 </div>
 
                 <div class="md:hidden">
-                    <button v-if="openMenu" @click="openMenu = !openMenu" class="text-2xl w-5">
+                    <button aria-label="menu toggler close" v-if="openMenu" @click="openMenu = !openMenu" class="text-2xl w-5">
                         <i class="fa fa-times"></i>
                     </button>
-                    <button v-else @click="openMenu = !openMenu" class="text-xl w-5">
+                    <button aria-label="menu toggler open" v-else @click="openMenu = !openMenu" class="text-xl w-5">
                         <i class="fa fa-bars"></i>
                     </button>
                 </div>
