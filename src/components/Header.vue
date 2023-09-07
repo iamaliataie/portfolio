@@ -20,7 +20,7 @@
                         </p>
                     </div>
                     <div class="text-center md:text-start w-full flex items-center space-x-4 justify-center md:justify-start">
-                        <a href="#contact" aria-label="talk to me"
+                        <a href="#contact" aria-label="talk with me"
                             class="uppercase p-3 text-sm sm:text-md lg:text-lg sm:p-4 md:p-3 lg:px-6 lg:py-4 rounded-md bg-sky-600 text-white font-bold">talk
                             with me</a>
                         <a href="/CV-AliAhmadAtaie.pdf" target="_blank" aria-label="my resume"
