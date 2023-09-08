@@ -15,7 +15,7 @@
                         <h2 class="text-2xl sm:text-4xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-sky-700">Full
                             Stack Developer</h2>
                         <p class="text-justify sm:text-lg md:text-sm lg:text-lg mt-4 text-slate-800 dark:text-slate-300">
-                            I am a fullstack Developer with a vast array of knowledge in many different frontend and backend
+                            I am a full-stack developer with a vast array of knowledge in many different frontend and backend
                             languages, responsive frameworks, databases, and best code practices.
                         </p>
                     </div>
