@@ -21,7 +21,7 @@
                 <div
                     class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl dark:border dark:border-slate-700">
                     <div class="col-span-1 p-4 sm:p-2">
-                        <img src="../assets/sk/django.png" alt="">
+                        <img src="../assets/sk/django.png" alt="" class="w-fit h-fit" >
                     </div>
                     <div
                         class="col-span-3 bg-green-950 py-2 sm:p-0 sm:rounded-xl flex justify-center items-center w-full h-full">
@@ -31,7 +31,7 @@
                 <div
                     class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl dark:border dark:border-slate-700">
                     <div class="col-span-1 p-4 sm:p-2">
-                        <img src="../assets/sk/js.png" alt="">
+                        <img src="../assets/sk/js.png" alt="" class="w-fit h-fit" >
                     </div>
                     <div
                         class="col-span-3 bg-yellow-300 py-2 sm:p-0 sm:rounded-xl flex justify-center items-center w-full h-full">
@@ -41,7 +41,7 @@
                 <div
                     class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl dark:border dark:border-slate-700">
                     <div class="col-span-1 p-4 sm:p-2">
-                        <img src="../assets/sk/vue.png" alt="">
+                        <img src="../assets/sk/vue.png" alt="" class="w-fit h-fit" >
                     </div>
                     <div
                         class="col-span-3 bg-emerald-500 py-2 sm:p-0 sm:rounded-xl flex justify-center items-center w-full h-full">
@@ -51,7 +51,7 @@
                 <div
                     class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl dark:border dark:border-slate-700">
                     <div class="col-span-1 p-4 sm:p-2">
-                        <img src="../assets/sk/tailwind.png" alt="">
+                        <img src="../assets/sk/tailwind.png" alt="" class="w-fit h-fit" >
                     </div>
                     <div
                         class="col-span-3 bg-sky-400 py-2 sm:p-0 sm:rounded-xl flex justify-center items-center w-full h-full">
@@ -61,7 +61,7 @@
                 <div
                     class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl dark:border dark:border-slate-700">
                     <div class="col-span-1 p-4 sm:p-2">
-                        <img src="../assets/sk/bootstrap.png" alt="">
+                        <img src="../assets/sk/bootstrap.png" alt="" class="w-fit h-fit" >
                     </div>
                     <div
                         class="col-span-3 bg-purple-900 py-2 sm:p-0 sm:rounded-xl flex justify-center items-center w-full h-full">
@@ -71,7 +71,7 @@
                 <div
                     class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl dark:border dark:border-slate-700">
                     <div class="col-span-1 p-4 sm:p-2">
-                        <img src="../assets/sk/supabase.png" alt="">
+                        <img src="../assets/sk/supabase.png" alt="" class="w-fit h-fit" >
                     </div>
                     <div
                         class="col-span-3 bg-emerald-500 py-2 sm:p-0 sm:rounded-xl flex justify-center items-center w-full h-full">
@@ -81,7 +81,7 @@
                 <div
                     class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl dark:border dark:border-slate-700">
                     <div class="col-span-1 p-4 sm:p-2">
-                        <img src="../assets/sk/postgres.png" alt="">
+                        <img src="../assets/sk/postgres.png" alt="" class="w-fit h-fit" >
                     </div>
                     <div
                         class="col-span-3 bg-cyan-700 py-2 sm:p-0  sm:rounded-xl flex justify-center items-center w-full h-full">
@@ -91,7 +91,7 @@
                 <div
                     class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl dark:border dark:border-slate-700">
                     <div class="col-span-1 p-4 sm:p-2">
-                        <img src="../assets/sk/xd.png" alt="">
+                        <img src="../assets/sk/xd.png" alt="" class="w-fit h-fit" >
                     </div>
                     <div
                         class="col-span-3 bg-[#470137] py-2 sm:p-0  sm:rounded-xl flex justify-center items-center w-full h-full">
