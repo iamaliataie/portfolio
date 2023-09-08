@@ -12,7 +12,7 @@ const openMenu = ref(false)
     <header class="py-3 fixed top-0 left-0  w-full z-20  bg-slate-50 dark:bg-slate-950">
         <div class="container flex items-center justify-between">
             <div class="flex flex-row space-x-2 items-center justify-start">
-                <img src="../assets/logo.svg" class="w-10 animate-spin-slow" alt="">
+                <img src="../assets/logo.svg" class="w-10 h-10 animate-spin-slow" alt="">
             </div>
 
             <div class="flex items-center space-x-3 md:space-x-6">
