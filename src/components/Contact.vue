@@ -58,7 +58,7 @@ const sendMessage = async () => {
 </script>
 
 <template>
-        <section id="contact" class="py-2 bg-sky-600">
+        <section id="contact" class="py-2 bg-sky-700">
             <div class="section container py-32">
                 <div class="flex flex-col justify-center items-center">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
