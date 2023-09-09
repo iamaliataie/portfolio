@@ -30,7 +30,7 @@ const props = defineProps(['loading', 'works'])
                             <p class="sm:text-xl md:text-lg lg:text-xl mt-4 text-justify">{{ work.description }}</p>
                         </div>
                         <div class="text-start w-full flex items-center space-x-4">
-                            <a :href="`https://${work.demo}`" aria-label="demo"
+                            <a :href="`https://${work.demo}`" aria-label="demo" target="_blank" 
                                 class="flex-1 sm:flex-none text-center uppercase p-2 sm:px-6 sm:py-4 rounded-md bg-sky-700 text-white font-semibold">demo</a>
                             <a :href="`https://${work.github}`" aria-label="source"
                                 class="flex-1 sm:flex-none text-center uppercase p-2 sm:px-6 sm:py-4 rounded-md bg-sky-700 text-white font-semibold">source</a>
