@@ -91,7 +91,7 @@
                 <div
                     class="grid grid-cols-1 sm:grid-cols-4 bg-white dark:bg-slate-900 rounded-lg sm:rounded-2xl overflow-hidden shadow-xl dark:border dark:border-slate-700">
                     <div class="col-span-1 p-4 sm:p-2">
-                        <img src="../assets/sk/xd.png" alt="" class="w-fit h-full">
+                        <img src="../assets/sk/xd.png" alt="xd" class="w-fit h-full">
                     </div>
                     <div
                         class="col-span-3 bg-[#470137] py-2 sm:p-0  sm:rounded-xl flex justify-center items-center w-full h-full">
