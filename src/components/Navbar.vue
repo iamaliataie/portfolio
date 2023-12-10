@@ -9,14 +9,14 @@ const openMenu = ref(false)
 
 </script>
 <template>
-    <header class="py-3 fixed top-0 left-0  w-full z-20  bg-slate-50 dark:bg-slate-950">
+    <header class="py-3 fixed top-0 left-0  w-full z-20  bg-slate-100 dark:bg-slate-950">
         <div class="container flex items-center justify-between">
             <div class="flex flex-row space-x-2 items-center justify-start">
                 <img src="../assets/logo.svg" class="w-10 h-10 animate-spin-slow" alt="">
             </div>
 
             <div class="flex items-center space-x-3 md:space-x-6">
-                <ul class="absolute top-[60px] left-0 right-0 h-screen space-y-10 text-xl p-10 transition-transform duration-300 ease-in-out md:text-lg md:space-y-0 md:p-0 md:text-md md:static md:h-auto bg-slate-50 dark:bg-slate-950 flex-col flex md:flex-row md:translate-x-0 items-center md:space-x-10 font-semibold"
+                <ul class="absolute top-[60px] left-0 right-0 h-screen space-y-10 text-xl p-10 transition-transform duration-300 ease-in-out md:text-lg md:space-y-0 md:p-0 md:text-md md:static md:h-auto bg-slate-100 dark:bg-slate-950 flex-col flex md:flex-row md:translate-x-0 items-center md:space-x-10 font-semibold"
                 :class="openMenu ? 'translate-x-0' : 'translate-x-full'">
                     <li class="w-full">
                         <a @click="openMenu = false" href="#home" aria-label="home" class="">Home</a>

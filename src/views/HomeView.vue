@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar.vue';
 import Header from '../components/Header.vue';
 import About from '../components/About.vue';
 import Works from '../components/Works.vue';
+import Timeline from '../components/Timeline.vue';
 import Skills from '../components/Skills.vue';
 import Contact from '../components/Contact.vue';
 import Footer from '../components/Footer.vue';
@@ -45,6 +46,7 @@ onMounted(() => {
         <Header />
         <!-- <About :about="aboutData"/> -->
         <Works :works="worksList" :loading="loading"/>
+        <Timeline/>
         <Skills />
         <Contact :contact="contactData" :loading="loading"/>
         <Footer />  

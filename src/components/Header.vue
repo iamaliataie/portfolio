@@ -1,5 +1,5 @@
 <template>
-    <section id="home" class="min-h-screen py-20 bg-slate-50 flex justify-center items-center">
+    <section id="home" class="min-h-screen py-20 bg-transparent flex justify-center items-center">
         <div class="section container h-full">
             <div
                 class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 h-full overflow-hidden space-y-10 md:space-y-0 z-50">
@@ -14,7 +14,7 @@
                             Ali Ahmad Ataie</h1>
                         <h2 class="text-2xl sm:text-4xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-sky-700">Full
                             Stack Developer</h2>
-                        <p class="text-justify sm:text-lg md:text-sm lg:text-lg mt-4 text-slate-800 dark:text-slate-300">
+                        <p class="text-justify sm:text-lg md:text-sm lg:text-lg mt-4 text-slate-800 dark:text-slate-300 w-[500px]">
                             I am a full-stack developer with a vast array of knowledge in many different frontend and backend
                             languages, responsive frameworks, databases, and best code practices.
                         </p>
@@ -28,7 +28,7 @@
                             My resume</a>
                 </div>
             </div>
-            <div class="xl:col-span-2 md:flex justify-center items-center px-6 sm:px-20 md:p-10">
+            <div class="xl:col-span-2 md:flex justify-center items-center px-6 sm:px-20 md:p-16">
                 <img src="../assets/ataie.jpg" alt="image" class=" w-full h-full md:rounded-full">
             </div>
         </div>
