@@ -1,8 +1,8 @@
 <template>
-    <section id="home" class="h-auto pt-[80px]">
-        <div class="section container h-full py-10 md:pt-24 md md:pb-32">
+    <section id="home" class="min-h-screen py-20 bg-slate-50 flex justify-center items-center">
+        <div class="section container h-full">
             <div
-                class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 md:rounded-3xl h-full overflow-hidden space-y-10 md:shadow-xl md:space-y-0 md:bg-white md:dark:bg-slate-900 z-50">
+                class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 h-full overflow-hidden space-y-10 md:space-y-0 z-50">
                 <div
                     class="xl:col-span-3 flex flex-col justify-center items-center space-y-12 px-6 sm:px-20 sm:py-10 md:px-8 lg:px-14 xl:px-28">
                     <div class="text-center md:text-start w-full">
@@ -28,8 +28,8 @@
                             My resume</a>
                 </div>
             </div>
-            <div class="xl:col-span-2 md:flex justify-center items-center px-6 sm:px-20 md:p-0">
-                <img src="../assets/ataie.jpg" alt="image" class=" w-full h-full">
+            <div class="xl:col-span-2 md:flex justify-center items-center px-6 sm:px-20 md:p-10">
+                <img src="../assets/ataie.jpg" alt="image" class=" w-full h-full md:rounded-full">
             </div>
         </div>
     </div>
