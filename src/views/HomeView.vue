@@ -46,7 +46,7 @@ onMounted(() => {
         <Header />
         <!-- <About :about="aboutData"/> -->
         <Works :works="worksList" :loading="loading"/>
-        <!-- <Timeline/> -->
+        <Timeline/>
         <Skills />
         <Contact :contact="contactData" :loading="loading"/>
         <Footer />  
