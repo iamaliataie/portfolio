@@ -1,3 +1,6 @@
+<script setup>
+
+</script>
 <template>
     <div class="p-8 bg-slate-300 dark:bg-slate-800 rounded-xl">
         <div class="flex flex-col space-y-2">
