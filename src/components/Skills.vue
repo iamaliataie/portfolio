@@ -1,5 +1,5 @@
 <template>
-    <section id="skills" class="py-2">
+    <section id="skills" class="py-2 bg-slate-200 dark:bg-slate-900">
         <div class="section container py-32">
             <div class="flex justify-center items-center">
                 <div>

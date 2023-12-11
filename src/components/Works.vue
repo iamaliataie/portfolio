@@ -7,7 +7,7 @@ const props = defineProps(['loading', 'works'])
 </script>
 
 <template>
-    <section id="portfolio" class="py-2 bg-slate-200 dark:bg-slate-800">
+    <section id="portfolio" class="py-2 bg-slate-200 dark:bg-slate-900">
         <div class="section container py-32">
             <div class="flex justify-center items-center">
                 <div>
@@ -44,4 +44,5 @@ const props = defineProps(['loading', 'works'])
                 </div>
         </div>
     </div>
-</section></template>
+    </section>
+</template>
