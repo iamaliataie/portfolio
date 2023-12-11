@@ -14,7 +14,7 @@ const resume = reactive([
     },
     {
         id: 2,
-        title: 'Software Developer Intern',
+        title: 'Software Developement Intern',
         date: 'July 2023 - Nov 2023',
         organization: {
             title: 'Netlinks Ltd',
