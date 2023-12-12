@@ -13,6 +13,7 @@ import Footer from '../components/Footer.vue';
 
 const aboutData = ref({})
 const worksList = ref([])
+const resumeList = ref([])
 const contactData = ref({})
 const loading = ref(false)
 
@@ -21,10 +22,12 @@ const fetchData = async () => {
 
     const { data: about } = await supabase.from('about').select().single()
     const { data: works } = await supabase.from('works').select().order('index')
+    const { data: resume } = await supabase.from('resume').select().order('id', { ascending: false })
     const { data: contact } = await supabase.from('contact').select().single()
 
     aboutData.value = about;
     worksList.value = works;
+    resumeList.value = resume;
     contactData.value = contact;
 
     loading.value = false;
@@ -46,7 +49,7 @@ onMounted(() => {
         <Header />
         <!-- <About :about="aboutData"/> -->
         <Works :works="worksList" :loading="loading"/>
-        <Timeline/>
+        <Timeline :resume="resumeList"/>
         <Skills />
         <Contact :contact="contactData" :loading="loading"/>
         <Footer />  
