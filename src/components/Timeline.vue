@@ -52,7 +52,7 @@ const resumeList = reactive([
                     :date=item.duration
                     :title=item.title
                     :organization_title=item.organization_title
-                    :organization=item.organization_link
+                    :organization_link=item.organization_link
                     />
                 </div>
             </div>
