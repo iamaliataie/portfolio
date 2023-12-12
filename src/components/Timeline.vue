@@ -4,7 +4,7 @@ import TimelineCard from './TimelineCard.vue'
 
 const props = defineProps(['resume'])
 
-const resume = reactive([
+const resumeList = reactive([
     {
         id: 1,
         title: 'Odoo Developer',
@@ -49,9 +49,10 @@ const resume = reactive([
                 <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
                     <TimelineCard
                     v-for="item in resume"
-                    :date=item.date
+                    :date=item.duration
                     :title=item.title
-                    :organization=item.organization
+                    :organization_title=item.organization_title
+                    :organization=item.organization_link
                     />
                 </div>
             </div>
