@@ -30,6 +30,9 @@ const fetchData = async () => {
     resumeList.value = resume;
     contactData.value = contact;
 
+    console.log(resume);
+    console.log(resumeList.value);
+
     loading.value = false;
 
 }
