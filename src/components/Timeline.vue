@@ -2,6 +2,8 @@
 import {reactive} from 'vue'
 import TimelineCard from './TimelineCard.vue'
 
+const props = defineProps(['resume'])
+
 const resume = reactive([
     {
         id: 1,
