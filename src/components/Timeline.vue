@@ -4,36 +4,6 @@ import TimelineCard from './TimelineCard.vue'
 
 const props = defineProps(['resume'])
 
-const resumeList = reactive([
-    {
-        id: 1,
-        title: 'Odoo Developer',
-        date: 'Dec 2023 - Present',
-        organization: {
-            title: 'Netlinks Ltd',
-            link: 'https://netlinks.net'
-        }
-    },
-    {
-        id: 2,
-        title: 'Software Development Intern',
-        date: 'July 2023 - Nov 2023',
-        organization: {
-            title: 'Netlinks Ltd',
-            link: 'https://netlinks.net'
-        }
-    },
-    {
-        id: 3,
-        title: 'Computer Science',
-        date: '2019 - 2022',
-        organization: {
-            title: 'Kateb University',
-            link: 'https://kateb.edu.af'
-        }
-    },
-])
-
 </script>
 
 <template>
