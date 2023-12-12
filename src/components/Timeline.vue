@@ -22,6 +22,7 @@ const props = defineProps(['resume'])
                     :title=item.title
                     :organization_title=item.organization_title
                     :organization_link=item.organization_link
+                    :description=item.description
                     />
                 </div>
             </div>
