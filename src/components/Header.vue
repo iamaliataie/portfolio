@@ -1,5 +1,5 @@
 <template>
-    <section id="home" class="font-urbanist min-h-screen py-20 bg-transparent flex justify-center items-center">
+    <section id="home" class="min-h-screen py-20 bg-transparent flex justify-center items-center">
         <div class="section container h-full">
             <div
                 class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 h-full overflow-hidden space-y-10 md:space-y-0 z-50">
