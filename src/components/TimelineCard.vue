@@ -7,7 +7,7 @@ const props = defineProps(['date', 'title', 'organization_title', 'organization_
             <p class="text-lg sm:text-xl font-extrabold text-sky-700">{{ date }}</p>
             <p class="font-semibold text-[24px] sm:text-3xl ">{{ title }}</p>
             <a class="underline font-semibold" :href=organization_link target="_blank">{{ organization_title }}</a>
-            <p class="text-justify">{{ description }}</p>
+            <p class="text-lg text-justify">{{ description }}</p>
         </div>
     </div>
 </template>
