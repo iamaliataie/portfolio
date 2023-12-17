@@ -18,7 +18,8 @@ export default {
         'spin-slow': 'spin 20s linear infinite'
       },
       fontFamily: {
-        'urbanist': ['Urbanist', 'sans-serif']
+        'urbanist': ['Urbanist', 'sans-serif'],
+        'sans': ['DM Sans', 'sans-serif']
       },
     },
   },
