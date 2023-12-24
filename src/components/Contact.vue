@@ -74,7 +74,7 @@ const sendMessage = async () => {
                             <form ref="form" @submit.prevent="sendMessage" class="flex flex-col space-y-2">
                                 <input type="text" name="user_name" v-model="message.name" placeholder="Name*" class="text-xl text-white w-full rounded-lg bg-sky-800/50 py-2 px-4 outline-none  placeholder:text-white/50 focus:bg-sky-900">
                                 <input type="email" name="user_email" v-model="message.email" placeholder="Email*" class="text-xl text-white w-full rounded-lg bg-sky-800/50 py-2 px-4 outline-none  placeholder:text-white/50 focus:bg-sky-900">
-                                <textarea name="message" v-model="message.message" placeholder="Message*" class="text-xl text-white w-full rounded-lg bg-sky-800/50 px-4 py-2 outline-none placeholder:text-white/50 resize-none" rows="4"></textarea>
+                                <textarea name="message" v-model="message.message" placeholder="Message*" class="text-xl text-white w-full rounded-lg bg-sky-800/50 px-4 py-2 outline-none placeholder:text-white/50 resize-none focus:bg-sky-900" rows="4" ></textarea>
                                 <button type="submit" class="px-4 py-2 rounded-md bg-sky-800 sm:w-fit text-white uppercase hover:bg-sky-900 transition duration-200">
                                     {{ waiting ? 'Sending. please wait' : 'Send message' }}
                                 </button>
