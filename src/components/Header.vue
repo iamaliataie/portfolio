@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div class="xl:col-span-2 md:flex justify-center items-center px-6 sm:px-20 md:p-16">
-                <img src="../assets/ataie.jpg" alt="image" class=" w-full h-full md:rounded-full">
+                <img src="../assets/ataie.jpg" alt="image" class=" w-full h-full md:w-[360px] md:rounded-full">
             </div>
         </div>
     </div>
