@@ -13,5 +13,4 @@ onBeforeMount(async () => {
   </div>
 </template>
 
-<style>
-</style>
+
