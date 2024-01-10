@@ -18,7 +18,7 @@ const year = new Date().getFullYear();
                     <a href="https://instagram.com/iamaliataie" target="_blank" aria-label="instagram"><i class="fa-brands fa-instagram text-sky-600 text-4xl"></i></a>
                 </div>
                 <div class="text-center">
-                    <span class="text-slate-400 text-sm">&copy; 2023. All Rights Reserved</span>
+                    <span class="text-slate-400 text-sm">&copy; {{ year }}. All Rights Reserved</span>
                 </div>
             </div>
         </div>
