@@ -23,9 +23,9 @@
                         <a href="#contact" aria-label="talk with me"
                             class="uppercase p-3 text-sm sm:text-md lg:text-lg sm:p-4 md:p-3 lg:px-4 lg:py-3 rounded-md bg-sky-700 text-white font-semibold">talk
                             with me</a>
-                        <a href="/CV-AliAhmadAtaie.pdf" target="_blank" aria-label="my resume"
+                        <!-- <a href="/CV-AliAhmadAtaie.pdf" target="_blank" aria-label="my resume"
                             class="uppercase p-3 text-sm sm:text-md lg:text-lg sm:p-4 md:p-3 lg:px-4 lg:py-3 rounded-md bg-sky-700 text-white font-semibold">
-                            Download cv</a>
+                            Download cv</a> -->
                 </div>
             </div>
             <div class="xl:col-span-2 md:flex justify-center items-center px-6 sm:px-20 md:p-16">
